@@ -1,0 +1,12 @@
+grumphp:
+    tasks:
+        phpcs:
+            standard: ~
+        phpstan:
+            configuration: ./phpstan.neon
+            level: max
+        phpmd:
+            whitelist_patterns:
+                - 'src'
+            ruleset:
+                - 'phpmd.xml'
