@@ -20,14 +20,6 @@ It's symfony website-skeleton project with some additional tools to validate cod
     * PHP_CodeSniffer, PHPStan and PHPmd with same configuration as GrumPHP.
  
 
-### Trainers instructions
-
-1. Add your students team as contributor .
-2. Disallow both on 'dev' and 'master' branches your students writing credentials. 
-3. Disallow merge available while one approbation is not submitted on PR.
-
-> You can watch this very tiny short video : (Loom : verrouillage branches GitHub)[https://www.loom.com/share/ad0c641d0b9447be9e40fa38a499953b]
-
 ## Getting Started for Students
 
 ### Prerequisites
@@ -61,26 +53,6 @@ If you develop on Windows, you should edit you git configuration to change your 
 
 `git config --global core.autocrlf true`
 
-## Deployment
-
-![Img caprover](https://captain.phprover.wilders.dev/icon-512x512.png)
-
-To deploy on Cap Rover, follow [instructions in the manual](https://caprover.com/docs/get-started.html) and add, at least, two  *"Environmental Variables"* in *"App Configs"*  tab:
-
-* `APP_ENV` with `prod`/`dev` value
-* `DATABASE_URL` with the connection informations given by caprover when you create the related DB app.
-
-Caprover configuration files are : 
-
-* [captain-definition](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/captain-definition) Caprover entry point
-* [Dockerfile](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/Dockerfile) Web app configuration for Docker container
-* [docker-compose.yml](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/docker-compose.yml) ...not use it's used 😅
-* [docker-entry.sh](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/docker-entry.sh) shell instruction to execute when docker image is built
-* [nginx.conf](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/nginx.conf) Nginx server configuration
-* [php.ini](https://github.com/WildCodeSchool/sf4-pjt3-starter-kit/blob/master/php.ini) Php configuration
-
-
-
 ## Built With
 
 * [Symfony](https://github.com/symfony/symfony)
@@ -90,7 +62,6 @@ Caprover configuration files are :
 * [PHPMD](http://phpmd.org)
 * [ESLint](https://eslint.org/)
 * [Sass-Lint](https://github.com/sasstools/sass-lint)
-* [Travis CI](https://github.com/marketplace/travis-ci)
 
 ## Contributing
 
