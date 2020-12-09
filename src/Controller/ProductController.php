@@ -20,7 +20,7 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/bornes-de-ravitaillement", name="chargingStations")
+     * @Route("/nos-solutions-de-ravitaillement", name="chargingStations")
      */
     public function chargingStations(): Response
     {
