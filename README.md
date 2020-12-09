@@ -12,7 +12,6 @@ It's symfony website-skeleton project with some additional tools to validate cod
     * PHP_CodeSniffer to check PSR12 
     * PHPStan focuses on finding errors in your code (without actually running it)
     * PHPmd will check if you follow PHP best practices
-     Yusuf Celik, Kévin Francisco, Lucy Merlier and Yann Raulet
 
   If tests fail, the commit is canceled and a warning message is displayed to developper.
 
