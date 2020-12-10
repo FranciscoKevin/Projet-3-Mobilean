@@ -14,9 +14,12 @@
     <header>
         {% include '_navbar.html.twig' %}
     </header>
-{% block body %}
-<h1>{{ pageTitle }}</h1>
-{% endblock %}
+
+    <main>
+    {% block body %}
+    <h1>{{ pageTitle }}</h1>
+    {% endblock %}
+    </main>
 
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
