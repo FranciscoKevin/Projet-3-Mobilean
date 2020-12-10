@@ -19,7 +19,9 @@ class InformationController extends AbstractController
      */
     public function about(): Response
     {
-        return $this->render('information/about.html.twig');
+        return $this->render('information/about.html.twig', [
+            'pageTitle' => 'À Propos de Nous'
+        ]);
     }
 
     /**
@@ -29,6 +31,8 @@ class InformationController extends AbstractController
      */
     public function legal(): Response
     {
-        return $this->render('information/legal.html.twig');
+        return $this->render('information/legal.html.twig', [
+            'pageTitle' => 'Mentions Légales'
+        ]);
     }
 }

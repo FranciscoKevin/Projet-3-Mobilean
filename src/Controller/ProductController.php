@@ -19,7 +19,9 @@ class ProductController extends AbstractController
      */
     public function home(): Response
     {
-        return $this->render('product/home.html.twig');
+        return $this->render('product/home.html.twig', [
+            'pageTitle' => 'Nos Solutions Clés en Main'
+        ]);
     }
 
     /**
@@ -29,6 +31,8 @@ class ProductController extends AbstractController
      */
     public function chargingStations(): Response
     {
-        return $this->render('product/chargingStations.html.twig');
+        return $this->render('product/chargingStations.html.twig', [
+            'pageTitle' => 'Nos Solutions de Ravitaillement'
+        ]);
     }
 }
