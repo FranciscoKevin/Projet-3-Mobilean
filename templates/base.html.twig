@@ -12,12 +12,13 @@
 </head>
 <body>
     <header>
-        {% include '_navbar.html.twig' %}
+    {% block navbar %}
+    {% endblock %}
     </header>
 
     <main>
     {% block body %}
-    <h1>{{ pageTitle }}</h1>
+        <h1>{{ pageTitle }}</h1>
     {% endblock %}
     </main>
 
@@ -25,7 +26,8 @@
     {{ encore_entry_script_tags('app') }}
 {% endblock %}
     <footer>
-        {% include '_footer.html.twig' %}
+    {% block footer %}
+    {% endblock %}
     </footer>
 </body>
 </html>
