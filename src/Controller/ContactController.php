@@ -8,13 +8,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Creates the views that allow the users send information to Mobilean
- * @Route("/", name="contact_")
+ * @Route(name="contact_")
  */
 class ContactController extends AbstractController
 {
     /**
      * Displays contact page
-     * @Route("/contactez-nous", name="contact")
+     * @Route("/contactez-nous", name="message")
      * @return Response
      */
     public function contact(): Response

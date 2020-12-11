@@ -18,16 +18,17 @@
 
     <main>
     {% block body %}
-        <h1>{{ pageTitle }}</h1>
+        <h1>{{ pageTitle|default('') }}</h1>
     {% endblock %}
     </main>
 
-{% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
-{% endblock %}
     <footer>
     {% block footer %}
     {% endblock %}
     </footer>
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
 </body>
 </html>

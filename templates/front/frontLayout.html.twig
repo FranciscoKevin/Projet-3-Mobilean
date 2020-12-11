@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block navbar %}
-<nav class="navbar navbar-expand navbar-light bg-light fixed-top" role="navigation">
+<nav class="navbar navbar-expand navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="{{path('product_vehicles')}}">Mobilean</a>
     <div class="nav-item">
         <a class="nav-link" href="{{path('product_vehicles')}}">Nos solutions clés en main</a>
     </div>
     <div class="nav-item">
-        <a class="nav-link" href="{{path('product_chargingStations')}}">Nos solutions de ravitaillement</a>
+        <a class="nav-link" href="{{path('product_charging_stations')}}">Nos solutions de ravitaillement</a>
     </div>
     <div class="nav-item">
         <a class="nav-link" href="{{path('contact_estimate')}}">Je décris mon besoin</a>
@@ -23,11 +23,13 @@
 
 {% block footer %}
 <footer class="page-footer fixed-bottom bg-light">
-    <div class="nav-item">
-        <a class="nav-link" href="{{path('contact_contact')}}">Contactez-nous</a>
-    </div>
-    <div class="nav-item">
-        <a class="nav-link" href="{{path('information_legal')}}">Mentions légales</a>
-    </div>
+    <nav class="navbar navbar-expand">
+        <div class="nav-item">
+            <a class="nav-link" href="{{path('contact_message')}}">Contactez-nous</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="{{path('information_legal')}}">Mentions légales</a>
+        </div>
+    </nav>
 </footer>
 {% endblock %}

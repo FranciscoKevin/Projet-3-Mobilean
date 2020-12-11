@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Creates complementary views
- * @Route("/", name="information_")
+ * @Route(name="information_")
  */
 class InformationController extends AbstractController
 {
