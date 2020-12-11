@@ -14,24 +14,24 @@ class InformationController extends AbstractController
 {
     /**
      * Displays informations about Mobilean
-     * @Route("/à-propos-de-nous", name="about")
+     * @Route("/a-propos-de-nous", name="about")
      * @return Response
      */
     public function about(): Response
     {
-        return $this->render('information/about.html.twig', [
+        return $this->render('front/information/about.html.twig', [
             'pageTitle' => 'À Propos de Nous'
         ]);
     }
 
     /**
      * Displays legal notices
-     * @Route("/mentions-légales", name="legal")
+     * @Route("/mentions-legales", name="legal")
      * @return Response
      */
     public function legal(): Response
     {
-        return $this->render('information/legal.html.twig', [
+        return $this->render('front/information/legal.html.twig', [
             'pageTitle' => 'Mentions Légales'
         ]);
     }

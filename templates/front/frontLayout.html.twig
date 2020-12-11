@@ -1,5 +1,6 @@
-{# This page is the menu navigation of Mobilean #}
+{% extends 'base.html.twig' %}
 
+{% block navbar %}
 <nav class="navbar navbar-expand navbar-light bg-light fixed-top" role="navigation">
     <a class="navbar-brand" href="{{path('product_vehicles')}}">Mobilean</a>
     <div class="nav-item">
@@ -18,3 +19,15 @@
         <a class="nav-link" href="{{path('information_about')}}">À propos de nous</a>
     </div>
 </nav>
+{% endblock %}
+
+{% block footer %}
+<footer class="page-footer fixed-bottom bg-light">
+    <div class="nav-item">
+        <a class="nav-link" href="{{path('contact_contact')}}">Contactez-nous</a>
+    </div>
+    <div class="nav-item">
+        <a class="nav-link" href="{{path('information_legal')}}">Mentions légales</a>
+    </div>
+</footer>
+{% endblock %}
