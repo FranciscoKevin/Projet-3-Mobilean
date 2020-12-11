@@ -19,9 +19,7 @@ class ContactController extends AbstractController
      */
     public function contact(): Response
     {
-        return $this->render('front/contact/contact.html.twig', [
-            'pageTitle' => 'Contactez-Nous'
-        ]);
+        return $this->render('front/contact/contact.html.twig');
     }
 
     /**
@@ -31,9 +29,7 @@ class ContactController extends AbstractController
      */
     public function estimate(): Response
     {
-        return $this->render('front/contact/estimate.html.twig', [
-            'pageTitle' => 'Je Décris mon Besoin'
-        ]);
+        return $this->render('front/contact/estimate.html.twig');
     }
 
     /**
@@ -43,8 +39,6 @@ class ContactController extends AbstractController
      */
     public function partner(): Response
     {
-        return $this->render('front/contact/partner.html.twig', [
-            'pageTitle' => 'Devenir Installateur'
-        ]);
+        return $this->render('front/contact/partner.html.twig');
     }
 }
