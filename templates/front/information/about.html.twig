@@ -1,11 +1,12 @@
 {# This is the page that will display informations about Mobilean #}
 
-{% extends 'base.html.twig' %}
+{% extends 'front/front_layout.html.twig' %}
 
 {% block title %}À Propos de Nous - {{ parent() }}{% endblock %}
 
 {% block body %}
-{{ parent() }}
+<h1>À Propos de Nous</h1>
+
 <section id="ourActions">
     <h2>Nos Actions</h2>
     <ul>
@@ -31,11 +32,11 @@
 <section id="ourTeam">
     <h2>Notre Équipe</h2>
     <figure>
-        <img src="" alt="Yohan">
+        <img src="https://via.placeholder.com/150" alt="Yohan">
         <figcaption>Yohan</figcaption>
     </figure>
     <figure>
-        <img src="" alt="Clément">
+        <img src="https://via.placeholder.com/150" alt="Clément">
         <figcaption>Clément</figcaption>
     </figure>    
 </section>
