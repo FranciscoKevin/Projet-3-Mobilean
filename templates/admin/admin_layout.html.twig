@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block navbar %}
+<nav class="bg-light fixed-top">
+    <ul class="navbar navbar-expand navbar-light">
+        <li class="nav-item">
+            <a class="nav-link" href="{{path('admin_home')}}">Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{path('admin_vehicles')}}">Catalogue de véhicules</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{path('admin_charging_stations')}}">Catalogue de bornes de recharge</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{path('admin_estimates')}}">Demandes de devis</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{path('admin_partners')}}">Demandes de partenariat</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{path('product_vehicles')}}">Revenir au site utilisateur</a>
+        </li>
+    </ul>
+</nav>
+{% endblock %}
