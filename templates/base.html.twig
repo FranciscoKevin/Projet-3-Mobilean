@@ -1,19 +1,28 @@
+{# This is the base that all other views will extend #}
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="{{ asset('build/images/favicon.png') }}" />
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}
-        {{ encore_entry_link_tags('app') }}
-    {% endblock %}
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}" />
+    <title>{% block title %}Mobilean{% endblock %}</title>
+    {{ encore_entry_link_tags('app') }}
 </head>
 <body>
+    <header>
+    {% block navbar %}
+    {% endblock %}
+    </header>
 
-{% block body %}{% endblock %}
+    <main>
+    {% block body %}
+    {% endblock %}
+    </main>
 
-{% block javascripts %}
+    <footer>
+    {% block footer %}
+    {% endblock %}
+    </footer>
     {{ encore_entry_script_tags('app') }}
-{% endblock %}
 </body>
 </html>
