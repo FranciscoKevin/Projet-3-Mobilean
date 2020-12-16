@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Creates views that allow users to see the different products
- * @Route("/", name="product_")
+ * @Route(name="product_")
  */
 class ProductController extends AbstractController
 {
@@ -19,20 +19,16 @@ class ProductController extends AbstractController
      */
     public function home(): Response
     {
-        return $this->render('product/home.html.twig', [
-            'pageTitle' => 'Nos Solutions Clés en Main'
-        ]);
+        return $this->render('front/product/home.html.twig');
     }
 
     /**
      * Displays informations about the charging stations
-     * @Route("/nos-solutions-de-ravitaillement", name="chargingStations")
+     * @Route("/nos-solutions-de-ravitaillement", name="charging_stations")
      * @return Response
      */
     public function chargingStations(): Response
     {
-        return $this->render('product/chargingStations.html.twig', [
-            'pageTitle' => 'Nos Solutions de Ravitaillement'
-        ]);
+        return $this->render('front/product/charging_stations.html.twig');
     }
 }

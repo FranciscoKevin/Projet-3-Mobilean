@@ -1,31 +1,28 @@
 {# This is the base that all other views will extend #}
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="{{ asset('build/images/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}" />
     <title>{% block title %}Mobilean{% endblock %}</title>
-    {% block stylesheets %}
-        {{ encore_entry_link_tags('app') }}
-    {% endblock %}
+    {{ encore_entry_link_tags('app') }}
 </head>
 <body>
     <header>
-        {% include '_navbar.html.twig' %}
+    {% block navbar %}
+    {% endblock %}
     </header>
 
     <main>
     {% block body %}
-    <h1>{{ pageTitle }}</h1>
     {% endblock %}
     </main>
 
-{% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
-{% endblock %}
     <footer>
-        {% include '_footer.html.twig' %}
+    {% block footer %}
+    {% endblock %}
     </footer>
+    {{ encore_entry_script_tags('app') }}
 </body>
 </html>
