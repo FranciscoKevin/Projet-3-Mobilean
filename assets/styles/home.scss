@@ -1,14 +1,59 @@
-#carouselFourgons {
-    width: 80%;
-    margin: auto;
+.presentationText{
+  border: 1px black solid;
+  padding: 10px;
+  margin: 50px 0 50px 0;
+  text-align: justify;
 }
 
-#carouselVans {
-    width: 80%;
+.presentationRental{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoMobilean{
+    height: 15vw;
+}
+
+.rentalOffer1{
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.rentalOffer2{
+  list-style-type: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.rentalOffer3{
+  list-style-type: none;
+  font-size: 20px;
+}
+
+
+#vehicleTitle{
+  border: 1px black solid;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.vehicleType{
+  margin: 70px 0 70px 0;
+  text-align: center;
+}
+
+#carouselCommercialVehicles {
+    width: 70%;
     margin: auto;
 }
 
 #carouselPrivateVehicles {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+}
+
