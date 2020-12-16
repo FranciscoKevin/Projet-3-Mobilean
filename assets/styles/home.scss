@@ -1,59 +1,56 @@
-.presentationText{
+.presentationText {
   border: 1px black solid;
   padding: 10px;
   margin: 50px 0 50px 0;
   text-align: justify;
 }
 
-.presentationRental{
-    display: flex;
-    justify-content: space-between;
+.presentationRental {
+  display: flex;
+  justify-content: space-between;
 }
 
-.logoMobilean{
-    height: 15vw;
-}
-
-.rentalOffer1{
-  list-style-type: none;
+.presentationRental p {
   font-size: 30px;
+  padding-left: 70px;
 }
 
-.rentalOffer2{
-  list-style-type: none;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.rentalOffer3{
-  list-style-type: none;
+.presentationRental p span {
   font-size: 20px;
 }
 
+.logoMobilean {
+  height: 15vw;
+}
 
-#vehicleTitle{
+
+#vehicleTitle {
   border: 1px black solid;
   text-align: center;
   margin-top: 70px;
 }
 
-.vehicleType{
+.vehicleType {
   margin: 70px 0 70px 0;
   text-align: center;
 }
 
 #carouselCommercialVehicles {
-    width: 70%;
-    margin: auto;
+  width: 70%;
+  margin: auto;
 }
 
 #carouselPrivateVehicles {
-    width: 70%;
-    margin: auto;
+  width: 70%;
+  margin: auto;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 50px;
   width: 50px;
+}
+
+figcaption {
+  font-size: 25px;
 }
 
