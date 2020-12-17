@@ -1,0 +1,28 @@
+    .station-presentation {
+        border: 0.5px black solid;
+        width: 80%;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .station-conrtainer {
+        display: flex;
+        padding-left: 5%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .station-block {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    
+    .stations-text {
+        padding-right: 15%;
+        padding-left: auto;
+    }
