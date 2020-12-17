@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Creates complementary views
- * @Route("/", name="information_")
+ * @Route(name="information_")
  */
 class InformationController extends AbstractController
 {
@@ -19,9 +19,7 @@ class InformationController extends AbstractController
      */
     public function about(): Response
     {
-        return $this->render('front/information/about.html.twig', [
-            'pageTitle' => 'À Propos de Nous'
-        ]);
+        return $this->render('front/information/about.html.twig');
     }
 
     /**
@@ -31,8 +29,6 @@ class InformationController extends AbstractController
      */
     public function legal(): Response
     {
-        return $this->render('front/information/legal.html.twig', [
-            'pageTitle' => 'Mentions Légales'
-        ]);
+        return $this->render('front/information/legal.html.twig');
     }
 }

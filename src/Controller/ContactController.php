@@ -8,20 +8,18 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Creates the views that allow the users send information to Mobilean
- * @Route("/", name="contact_")
+ * @Route(name="contact_")
  */
 class ContactController extends AbstractController
 {
     /**
      * Displays contact page
-     * @Route("/contactez-nous", name="contact")
+     * @Route("/contactez-nous", name="message")
      * @return Response
      */
     public function contact(): Response
     {
-        return $this->render('front/contact/contact.html.twig', [
-            'pageTitle' => 'Contactez-Nous'
-        ]);
+        return $this->render('front/contact/contact.html.twig');
     }
 
     /**
@@ -31,9 +29,7 @@ class ContactController extends AbstractController
      */
     public function estimate(): Response
     {
-        return $this->render('front/contact/estimate.html.twig', [
-            'pageTitle' => 'Je Décris mon Besoin'
-        ]);
+        return $this->render('front/contact/estimate.html.twig');
     }
 
     /**
@@ -43,8 +39,6 @@ class ContactController extends AbstractController
      */
     public function partner(): Response
     {
-        return $this->render('front/contact/partner.html.twig', [
-            'pageTitle' => 'Devenir Installateur'
-        ]);
+        return $this->render('front/contact/partner.html.twig');
     }
 }
