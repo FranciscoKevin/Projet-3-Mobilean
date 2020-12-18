@@ -14,4 +14,3 @@ import '../styles/home.scss';
 
 // The Bootstrap module needed
 require('bootstrap');
-
