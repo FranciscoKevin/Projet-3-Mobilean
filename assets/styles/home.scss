@@ -1,7 +1,7 @@
 .presentation-text {
-	border: 1px #000000 solid;
+	border: 1px black solid;
+	margin: 50px 0;
 	padding: 10px;
-	margin: 50px 0 50px 0;
 	text-align: justify;
 }
 
@@ -24,31 +24,32 @@
 }
 
 #vehicle-title {
-	border: 1px #000000 solid;
-	text-align: center;
+	border: 1px black solid;
 	margin-top: 70px;
+	text-align: center;
 }
 
 .vehicle-type {
-	margin: 70px 0 70px 0;
+	margin: 70px 0;
 	text-align: center;
 }
 
 #carousel-commercial-vehicles {
-	width: 70%;
 	margin: auto;
+	width: 70%;
 }
 
 #carousel-private-vehicles {
-	width: 70%;
 	margin: auto;
+	width: 70%;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
 	height: 50px;
 	width: 50px;
 }
 
-figcaption{
+figcaption {
 	font-size: 25px;
 }
