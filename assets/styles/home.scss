@@ -1,45 +1,45 @@
-.presentationText {
+.presentation-text {
 	border: 1px #000000 solid;
 	padding: 10px;
 	margin: 50px 0 50px 0;
 	text-align: justify;
 }
 
-.presentationRental {
+.presentation-rental {
 	display: flex;
 	justify-content: space-between;
 }
 
-.presentationRental p {
+.presentation-rental p {
 	font-size: 30px;
 	padding-left: 70px;
 }
 
-.presentationRental p span {
+.presentation-rental p span {
 	font-size: 20px;
 }
 
-.logoMobilean {
+.logo-mobilean {
 	height: 15vw;
 }
 
-#vehicleTitle {
+#vehicle-title {
 	border: 1px #000000 solid;
 	text-align: center;
 	margin-top: 70px;
 }
 
-.vehicleType {
+.vehicle-type {
 	margin: 70px 0 70px 0;
 	text-align: center;
 }
 
-#carouselCommercialVehicles {
+#carousel-commercial-vehicles {
 	width: 70%;
 	margin: auto;
 }
 
-#carouselPrivateVehicles {
+#carousel-private-vehicles {
 	width: 70%;
 	margin: auto;
 }
