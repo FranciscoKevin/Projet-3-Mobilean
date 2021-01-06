@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f6ebd4f70bb41db5ca13b2e3d00332f",
-    "packages": [{
+    "content-hash": "731ddec08da77eab033286d321cc646b",
+    "packages": [
+        {
             "name": "composer/package-versions-deprecated",
             "version": "1.11.99.1",
             "source": {
@@ -47,7 +48,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com"
                 },
@@ -61,7 +63,8 @@
                 "issues": "https://github.com/composer/package-versions-deprecated/issues",
                 "source": "https://github.com/composer/package-versions-deprecated/tree/1.11.99.1"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://packagist.com",
                     "type": "custom"
                 },
@@ -116,7 +119,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -195,7 +199,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -233,7 +238,8 @@
                 "issues": "https://github.com/doctrine/cache/issues",
                 "source": "https://github.com/doctrine/cache/tree/1.10.x"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -281,7 +287,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -352,7 +359,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -388,7 +396,8 @@
                 "issues": "https://github.com/doctrine/common/issues",
                 "source": "https://github.com/doctrine/common/tree/3.1.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -453,10 +462,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Jonathan Wage",
-                "email": "jonwage@gmail.com"
-            }],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
             "description": "Data Fixtures for all Doctrine Object Managers",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
@@ -466,7 +477,8 @@
                 "issues": "https://github.com/doctrine/data-fixtures/issues",
                 "source": "https://github.com/doctrine/data-fixtures/tree/1.4.x"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -531,7 +543,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -575,7 +588,8 @@
                 "issues": "https://github.com/doctrine/dbal/issues",
                 "source": "https://github.com/doctrine/dbal/tree/2.12.1"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -654,7 +668,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -683,7 +698,8 @@
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
                 "source": "https://github.com/doctrine/DoctrineBundle/tree/2.2.2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -739,7 +755,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -762,7 +779,8 @@
                 "issues": "https://github.com/doctrine/DoctrineFixturesBundle/issues",
                 "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/3.4.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -824,7 +842,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -848,7 +867,8 @@
                 "issues": "https://github.com/doctrine/DoctrineMigrationsBundle/issues",
                 "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.0.x"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -902,7 +922,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -940,7 +961,8 @@
                 "issues": "https://github.com/doctrine/event-manager/issues",
                 "source": "https://github.com/doctrine/event-manager/tree/1.1.x"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -994,7 +1016,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -1033,7 +1056,8 @@
                 "issues": "https://github.com/doctrine/inflector/issues",
                 "source": "https://github.com/doctrine/inflector/tree/2.0.x"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -1084,11 +1108,13 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Marco Pivetta",
-                "email": "ocramius@gmail.com",
-                "homepage": "https://ocramius.github.io/"
-            }],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "https://ocramius.github.io/"
+                }
+            ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
             "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
             "keywords": [
@@ -1099,7 +1125,8 @@
                 "issues": "https://github.com/doctrine/instantiator/issues",
                 "source": "https://github.com/doctrine/instantiator/tree/1.4.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -1151,7 +1178,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -1177,7 +1205,8 @@
                 "issues": "https://github.com/doctrine/lexer/issues",
                 "source": "https://github.com/doctrine/lexer/tree/1.2.1"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -1253,7 +1282,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
                 },
@@ -1278,7 +1308,8 @@
                 "issues": "https://github.com/doctrine/migrations/issues",
                 "source": "https://github.com/doctrine/migrations/tree/3.0.1"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -1351,7 +1382,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -1427,7 +1459,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -1505,11 +1538,13 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Jeremy Dorn",
-                "email": "jeremy@jeremydorn.com",
-                "homepage": "http://jeremydorn.com/"
-            }],
+            "authors": [
+                {
+                    "name": "Jeremy Dorn",
+                    "email": "jeremy@jeremydorn.com",
+                    "homepage": "http://jeremydorn.com/"
+                }
+            ],
             "description": "a PHP SQL highlighting library",
             "homepage": "https://github.com/doctrine/sql-formatter/",
             "keywords": [
@@ -1564,9 +1599,11 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Eduardo Gulias Davis"
-            }],
+            "authors": [
+                {
+                    "name": "Eduardo Gulias Davis"
+                }
+            ],
             "description": "A library for validating emails against several RFCs",
             "homepage": "https://github.com/egulias/EmailValidator",
             "keywords": [
@@ -1580,10 +1617,12 @@
                 "issues": "https://github.com/egulias/EmailValidator/issues",
                 "source": "https://github.com/egulias/EmailValidator/tree/2.1.24"
             },
-            "funding": [{
-                "url": "https://github.com/egulias",
-                "type": "github"
-            }],
+            "funding": [
+                {
+                    "url": "https://github.com/egulias",
+                    "type": "github"
+                }
+            ],
             "time": "2020-11-14T15:56:27+00:00"
         },
         {
@@ -1646,10 +1685,12 @@
                 "rss": "https://github.com/laminas/laminas-code/releases.atom",
                 "source": "https://github.com/laminas/laminas-code"
             },
-            "funding": [{
-                "url": "https://funding.communitybridge.org/projects/laminas-project",
-                "type": "community_bridge"
-            }],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
             "time": "2020-11-30T20:16:31+00:00"
         },
         {
@@ -1716,10 +1757,12 @@
                 "rss": "https://github.com/laminas/laminas-eventmanager/releases.atom",
                 "source": "https://github.com/laminas/laminas-eventmanager"
             },
-            "funding": [{
-                "url": "https://funding.communitybridge.org/projects/laminas-project",
-                "type": "community_bridge"
-            }],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
             "time": "2020-08-25T11:10:44+00:00"
         },
         {
@@ -1774,10 +1817,12 @@
                 "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
                 "source": "https://github.com/laminas/laminas-zendframework-bridge"
             },
-            "funding": [{
-                "url": "https://funding.communitybridge.org/projects/laminas-project",
-                "type": "community_bridge"
-            }],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
             "time": "2020-09-14T14:23:00+00:00"
         },
         {
@@ -1846,11 +1891,13 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "https://seld.be"
-            }],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
             "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
             "homepage": "https://github.com/Seldaek/monolog",
             "keywords": [
@@ -1862,7 +1909,8 @@
                 "issues": "https://github.com/Seldaek/monolog/issues",
                 "source": "https://github.com/Seldaek/monolog/tree/2.2.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://github.com/Seldaek",
                     "type": "github"
                 },
@@ -1931,11 +1979,13 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Marco Pivetta",
-                "email": "ocramius@gmail.com",
-                "homepage": "http://ocramius.github.io/"
-            }],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.io/"
+                }
+            ],
             "description": "A library providing utilities to generate, instantiate and generally operate with Object Proxies",
             "homepage": "https://github.com/Ocramius/ProxyManager",
             "keywords": [
@@ -1949,7 +1999,8 @@
                 "issues": "https://github.com/Ocramius/ProxyManager/issues",
                 "source": "https://github.com/Ocramius/ProxyManager/tree/2.10.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://github.com/Ocramius",
                     "type": "github"
                 },
@@ -1992,10 +2043,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Jaap van Otterdijk",
-                "email": "opensource@ijaap.nl"
-            }],
+            "authors": [
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "opensource@ijaap.nl"
+                }
+            ],
             "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
             "homepage": "http://www.phpdoc.org",
             "keywords": [
@@ -2050,7 +2103,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
                 },
@@ -2102,10 +2156,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Mike van Riel",
-                "email": "me@mikevanriel.com"
-            }],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                }
+            ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
@@ -2145,10 +2201,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
-            }],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
             "description": "Common interface for caching libraries",
             "keywords": [
                 "cache",
@@ -2192,10 +2250,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
-            }],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
             "description": "Common Container Interface (PHP FIG PSR-11)",
             "homepage": "https://github.com/php-fig/container",
             "keywords": [
@@ -2243,10 +2303,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
-            }],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
             "description": "Standard interfaces for event handling.",
             "keywords": [
                 "events",
@@ -2291,10 +2353,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
-            }],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
             "description": "Common interfaces for HTTP links",
             "keywords": [
                 "http",
@@ -2341,10 +2405,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
-            }],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
             "description": "Common interface for logging libraries",
             "homepage": "https://github.com/php-fig/log",
             "keywords": [
@@ -2420,10 +2486,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            }],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
             "description": "This bundle provides a way to configure your controllers with annotations",
             "keywords": [
                 "annotations",
@@ -2473,7 +2541,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -2487,7 +2556,8 @@
             "support": {
                 "source": "https://github.com/symfony/asset/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -2561,7 +2631,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -2579,7 +2650,8 @@
             "support": {
                 "source": "https://github.com/symfony/cache/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -2634,7 +2706,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -2656,7 +2729,8 @@
             "support": {
                 "source": "https://github.com/symfony/cache-contracts/tree/v2.2.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -2718,7 +2792,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -2732,7 +2807,8 @@
             "support": {
                 "source": "https://github.com/symfony/config/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -2807,7 +2883,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -2821,7 +2898,8 @@
             "support": {
                 "source": "https://github.com/symfony/console/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -2892,7 +2970,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -2906,7 +2985,8 @@
             "support": {
                 "source": "https://github.com/symfony/dependency-injection/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -2957,7 +3037,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -2971,7 +3052,8 @@
             "support": {
                 "source": "https://github.com/symfony/deprecation-contracts/tree/master"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3066,7 +3148,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3080,7 +3163,8 @@
             "support": {
                 "source": "https://github.com/symfony/doctrine-bridge/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3129,7 +3213,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3148,7 +3233,8 @@
             "support": {
                 "source": "https://github.com/symfony/dotenv/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3201,7 +3287,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3215,7 +3302,8 @@
             "support": {
                 "source": "https://github.com/symfony/error-handler/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3284,7 +3372,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3298,7 +3387,8 @@
             "support": {
                 "source": "https://github.com/symfony/event-dispatcher/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3353,7 +3443,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -3375,7 +3466,8 @@
             "support": {
                 "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v2.2.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3423,7 +3515,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3437,7 +3530,8 @@
             "support": {
                 "source": "https://github.com/symfony/expression-language/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3483,7 +3577,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3497,7 +3592,8 @@
             "support": {
                 "source": "https://github.com/symfony/filesystem/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3542,7 +3638,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3556,7 +3653,8 @@
             "support": {
                 "source": "https://github.com/symfony/finder/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3612,16 +3710,19 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Fabien Potencier",
-                "email": "fabien.potencier@gmail.com"
-            }],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien.potencier@gmail.com"
+                }
+            ],
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
                 "source": "https://github.com/symfony/flex/tree/v1.11.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3706,7 +3807,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3720,7 +3822,8 @@
             "support": {
                 "source": "https://github.com/symfony/form/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3849,7 +3952,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3863,7 +3967,8 @@
             "support": {
                 "source": "https://github.com/symfony/framework-bundle/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -3931,7 +4036,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -3945,7 +4051,8 @@
             "support": {
                 "source": "https://github.com/symfony/http-client/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4000,7 +4107,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -4022,7 +4130,8 @@
             "support": {
                 "source": "https://github.com/symfony/http-client-contracts/tree/v2.3.1"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4079,7 +4188,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4093,7 +4203,8 @@
             "support": {
                 "source": "https://github.com/symfony/http-foundation/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4189,7 +4300,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4203,7 +4315,8 @@
             "support": {
                 "source": "https://github.com/symfony/http-kernel/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4259,7 +4372,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Bernhard Schussek",
                     "email": "bschussek@gmail.com"
                 },
@@ -4289,7 +4403,8 @@
             "support": {
                 "source": "https://github.com/symfony/intl/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4353,7 +4468,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4367,7 +4483,8 @@
             "support": {
                 "source": "https://github.com/symfony/mailer/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4422,7 +4539,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4440,7 +4558,8 @@
             "support": {
                 "source": "https://github.com/symfony/mime/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4505,7 +4624,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4519,7 +4639,8 @@
             "support": {
                 "source": "https://github.com/symfony/monolog-bridge/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4579,7 +4700,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4598,7 +4720,8 @@
                 "issues": "https://github.com/symfony/monolog-bundle/issues",
                 "source": "https://github.com/symfony/monolog-bundle/tree/v3.6.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4647,7 +4770,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4665,7 +4789,8 @@
             "support": {
                 "source": "https://github.com/symfony/notifier/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4712,7 +4837,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -4731,7 +4857,8 @@
             "support": {
                 "source": "https://github.com/symfony/options-resolver/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4788,7 +4915,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -4810,7 +4938,8 @@
             "support": {
                 "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.20.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4865,7 +4994,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -4887,7 +5017,8 @@
             "support": {
                 "source": "https://github.com/symfony/polyfill-intl-icu/tree/v1.20.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -4946,7 +5077,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Laurent Bassin",
                     "email": "laurent@bassin.info"
                 },
@@ -4972,7 +5104,8 @@
             "support": {
                 "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.20.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5032,7 +5165,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -5054,7 +5188,8 @@
             "support": {
                 "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.20.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5111,7 +5246,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -5132,7 +5268,8 @@
             "support": {
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.20.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5189,7 +5326,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -5209,7 +5347,8 @@
             "support": {
                 "source": "https://github.com/symfony/polyfill-php73/tree/v1.20.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5266,7 +5405,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Ion Bazan",
                     "email": "ion.bazan@gmail.com"
                 },
@@ -5290,7 +5430,8 @@
             "support": {
                 "source": "https://github.com/symfony/polyfill-php80/tree/v1.20.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5336,7 +5477,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5350,7 +5492,8 @@
             "support": {
                 "source": "https://github.com/symfony/process/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5403,7 +5546,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5428,7 +5572,8 @@
             "support": {
                 "source": "https://github.com/symfony/property-access/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5493,7 +5638,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Kévin Dunglas",
                     "email": "dunglas@gmail.com"
                 },
@@ -5515,7 +5661,8 @@
             "support": {
                 "source": "https://github.com/symfony/property-info/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5583,7 +5730,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5603,7 +5751,8 @@
             "support": {
                 "source": "https://github.com/symfony/routing/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5620,16 +5769,16 @@
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v5.1.9",
+            "version": "v5.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "1060810a1dc7361304c50d4aa2569fe5b4da60c6"
+                "reference": "b280a0130b48ce1afa2bd261d1fb15ada7e538ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/1060810a1dc7361304c50d4aa2569fe5b4da60c6",
-                "reference": "1060810a1dc7361304c50d4aa2569fe5b4da60c6",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/b280a0130b48ce1afa2bd261d1fb15ada7e538ab",
+                "reference": "b280a0130b48ce1afa2bd261d1fb15ada7e538ab",
                 "shasum": ""
             },
             "require": {
@@ -5637,6 +5786,7 @@
                 "php": ">=7.2.5",
                 "symfony/config": "^4.4|^5.0",
                 "symfony/dependency-injection": "^5.1",
+                "symfony/deprecation-contracts": "^2.1",
                 "symfony/event-dispatcher": "^5.1",
                 "symfony/http-kernel": "^5.0",
                 "symfony/polyfill-php80": "^1.15",
@@ -5684,7 +5834,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5696,9 +5847,10 @@
             "description": "Symfony SecurityBundle",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-bundle/tree/v5.1.9"
+                "source": "https://github.com/symfony/security-bundle/tree/v5.1.10"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5711,7 +5863,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-01T15:43:26+00:00"
+            "time": "2020-12-18T07:32:24+00:00"
         },
         {
             "name": "symfony/security-core",
@@ -5770,7 +5922,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5784,7 +5937,8 @@
             "support": {
                 "source": "https://github.com/symfony/security-core/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5839,7 +5993,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5853,7 +6008,8 @@
             "support": {
                 "source": "https://github.com/symfony/security-csrf/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5904,7 +6060,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5918,7 +6075,8 @@
             "support": {
                 "source": "https://github.com/symfony/security-guard/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -5982,7 +6140,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -5996,7 +6155,8 @@
             "support": {
                 "source": "https://github.com/symfony/security-http/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6075,7 +6235,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -6089,7 +6250,8 @@
             "support": {
                 "source": "https://github.com/symfony/serializer/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6144,7 +6306,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -6166,7 +6329,8 @@
             "support": {
                 "source": "https://github.com/symfony/service-contracts/tree/master"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6212,7 +6376,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -6226,7 +6391,8 @@
             "support": {
                 "source": "https://github.com/symfony/stopwatch/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6285,7 +6451,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -6307,7 +6474,8 @@
             "support": {
                 "source": "https://github.com/symfony/string/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6381,7 +6549,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -6395,7 +6564,8 @@
             "support": {
                 "source": "https://github.com/symfony/translation/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6449,7 +6619,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -6471,7 +6642,8 @@
             "support": {
                 "source": "https://github.com/symfony/translation-contracts/tree/v2.3.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6569,7 +6741,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -6583,7 +6756,8 @@
             "support": {
                 "source": "https://github.com/symfony/twig-bridge/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6654,7 +6828,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -6668,7 +6843,8 @@
             "support": {
                 "source": "https://github.com/symfony/twig-bundle/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6760,7 +6936,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -6774,7 +6951,8 @@
             "support": {
                 "source": "https://github.com/symfony/validator/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6842,7 +7020,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -6860,7 +7039,8 @@
             "support": {
                 "source": "https://github.com/symfony/var-dumper/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6909,7 +7089,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -6931,7 +7112,8 @@
             "support": {
                 "source": "https://github.com/symfony/var-exporter/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -6990,7 +7172,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Kévin Dunglas",
                     "email": "dunglas@gmail.com"
                 },
@@ -7016,7 +7199,8 @@
             "support": {
                 "source": "https://github.com/symfony/web-link/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -7075,16 +7259,19 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
             "description": "Integration with your Symfony app & Webpack Encore!",
             "support": {
                 "issues": "https://github.com/symfony/webpack-encore-bundle/issues",
                 "source": "https://github.com/symfony/webpack-encore-bundle/tree/v1.8.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -7143,7 +7330,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -7157,7 +7345,8 @@
             "support": {
                 "source": "https://github.com/symfony/yaml/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -7214,12 +7403,14 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com",
-                "homepage": "http://fabien.potencier.org",
-                "role": "Lead Developer"
-            }],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                }
+            ],
             "description": "A Symfony bundle for extra Twig extensions",
             "homepage": "https://twig.symfony.com",
             "keywords": [
@@ -7230,7 +7421,8 @@
             "support": {
                 "source": "https://github.com/twigphp/twig-extra-bundle/tree/v3.1.1"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://github.com/fabpot",
                     "type": "github"
                 },
@@ -7279,7 +7471,8 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com",
                     "homepage": "http://fabien.potencier.org",
@@ -7304,7 +7497,8 @@
                 "issues": "https://github.com/twigphp/Twig/issues",
                 "source": "https://github.com/twigphp/Twig/tree/v3.1.1"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://github.com/fabpot",
                     "type": "github"
                 },
@@ -7366,10 +7560,12 @@
                 "issues": "https://github.com/webimpress/safe-writer/issues",
                 "source": "https://github.com/webimpress/safe-writer/tree/master"
             },
-            "funding": [{
-                "url": "https://github.com/michalbundyra",
-                "type": "github"
-            }],
+            "funding": [
+                {
+                    "url": "https://github.com/michalbundyra",
+                    "type": "github"
+                }
+            ],
             "time": "2020-08-25T07:21:11+00:00"
         },
         {
@@ -7407,10 +7603,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Bernhard Schussek",
-                "email": "bschussek@gmail.com"
-            }],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
             "description": "Assertions to validate method input/output with nice error messages.",
             "keywords": [
                 "assert",
@@ -7424,7 +7622,8 @@
             "time": "2020-07-08T17:02:28+00:00"
         }
     ],
-    "packages-dev": [{
+    "packages-dev": [
+        {
             "name": "amphp/amp",
             "version": "v2.5.1",
             "source": {
@@ -7469,7 +7668,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Daniel Lowrey",
                     "email": "rdlowrey@php.net"
                 },
@@ -7504,10 +7704,12 @@
                 "issues": "https://github.com/amphp/amp/issues",
                 "source": "https://github.com/amphp/amp/tree/v2.5.1"
             },
-            "funding": [{
-                "url": "https://github.com/amphp",
-                "type": "github"
-            }],
+            "funding": [
+                {
+                    "url": "https://github.com/amphp",
+                    "type": "github"
+                }
+            ],
             "time": "2020-11-03T16:23:45+00:00"
         },
         {
@@ -7554,7 +7756,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Aaron Piotrowski",
                     "email": "aaron@trowski.com"
                 },
@@ -7623,7 +7826,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Aaron Piotrowski",
                     "email": "aaron@trowski.com"
                 },
@@ -7685,10 +7889,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Niklas Keller",
-                "email": "me@kelunik.com"
-            }],
+            "authors": [
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                }
+            ],
             "description": "Parallel processing made simple.",
             "support": {
                 "issues": "https://github.com/amphp/parallel-functions/issues",
@@ -7727,7 +7933,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Niklas Keller",
                     "email": "me@kelunik.com"
                 },
@@ -7787,7 +7994,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Bob Weinand",
                     "email": "bobwei9@hotmail.com"
                 },
@@ -7842,7 +8050,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Aaron Piotrowski",
                     "email": "aaron@trowski.com"
                 },
@@ -7902,7 +8111,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Aaron Piotrowski",
                     "email": "aaron@trowski.com"
                 },
@@ -7957,10 +8167,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "John Stevenson",
-                "email": "john-stevenson@blueyonder.co.uk"
-            }],
+            "authors": [
+                {
+                    "name": "John Stevenson",
+                    "email": "john-stevenson@blueyonder.co.uk"
+                }
+            ],
             "description": "Restarts a process without Xdebug.",
             "keywords": [
                 "Xdebug",
@@ -7971,7 +8183,8 @@
                 "issues": "https://github.com/composer/xdebug-handler/issues",
                 "source": "https://github.com/composer/xdebug-handler/tree/1.4.5"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://packagist.com",
                     "type": "custom"
                 },
@@ -8025,7 +8238,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Graham Campbell",
                     "email": "graham@alt-three.com"
                 },
@@ -8047,10 +8261,12 @@
                 "issues": "https://github.com/gitonomy/gitlib/issues",
                 "source": "https://github.com/gitonomy/gitlib/tree/1.2"
             },
-            "funding": [{
-                "url": "https://tidelift.com/funding/github/packagist/gitonomy/gitlib",
-                "type": "tidelift"
-            }],
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/gitonomy/gitlib",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-07-30T14:54:11+00:00"
         },
         {
@@ -8093,9 +8309,11 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "authors": [{
-                "name": "Nikita Popov"
-            }],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
             "description": "A PHP parser written in PHP",
             "keywords": [
                 "parser",
@@ -8143,10 +8361,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Ondřej Machulda",
-                "email": "ondrej.machulda@gmail.com"
-            }],
+            "authors": [
+                {
+                    "name": "Ondřej Machulda",
+                    "email": "ondrej.machulda@gmail.com"
+                }
+            ],
             "description": "Detect continuous integration environment and provide unified access to properties of current build",
             "keywords": [
                 "CircleCI",
@@ -8216,7 +8436,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Marius Sarca",
                     "email": "marius.sarca@gmail.com"
                 },
@@ -8290,10 +8511,12 @@
                 "issues": "https://github.com/pdepend/pdepend/issues",
                 "source": "https://github.com/pdepend/pdepend/tree/master"
             },
-            "funding": [{
-                "url": "https://tidelift.com/funding/github/packagist/pdepend/pdepend",
-                "type": "tidelift"
-            }],
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/pdepend/pdepend",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-20T10:53:13+00:00"
         },
         {
@@ -8338,7 +8561,8 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Manuel Pichler",
                     "email": "github@manuel-pichler.de",
                     "homepage": "https://github.com/manuelpichler",
@@ -8370,10 +8594,12 @@
                 "issues": "https://github.com/phpmd/phpmd/issues",
                 "source": "https://github.com/phpmd/phpmd/tree/2.9.1"
             },
-            "funding": [{
-                "url": "https://tidelift.com/funding/github/packagist/phpmd/phpmd",
-                "type": "tidelift"
-            }],
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpmd/phpmd",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-09-23T22:06:32+00:00"
         },
         {
@@ -8474,7 +8700,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Toon Verwerft",
                     "email": "toon.verwerft@phpro.be"
                 },
@@ -8584,7 +8811,8 @@
                 "issues": "https://github.com/phpstan/phpstan/issues",
                 "source": "https://github.com/phpstan/phpstan/tree/0.12.63"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://github.com/ondrejmirtes",
                     "type": "github"
                 },
@@ -8721,11 +8949,13 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Lukáš Unger",
-                "email": "looky.msc@gmail.com",
-                "homepage": "https://lookyman.net"
-            }],
+            "authors": [
+                {
+                    "name": "Lukáš Unger",
+                    "email": "looky.msc@gmail.com",
+                    "homepage": "https://lookyman.net"
+                }
+            ],
             "description": "Symfony Framework extensions and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-symfony/issues",
@@ -8766,11 +8996,13 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
-            }],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
             "description": "JSON Linter",
             "keywords": [
                 "json",
@@ -8782,7 +9014,8 @@
                 "issues": "https://github.com/Seldaek/jsonlint/issues",
                 "source": "https://github.com/Seldaek/jsonlint/tree/1.8.3"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://github.com/Seldaek",
                     "type": "github"
                 },
@@ -8830,10 +9063,12 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "authors": [{
-                "name": "Greg Sherwood",
-                "role": "lead"
-            }],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
             "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
             "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
             "keywords": [
@@ -8887,7 +9122,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -8901,7 +9137,8 @@
             "support": {
                 "source": "https://github.com/symfony/browser-kit/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -8946,7 +9183,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -8964,7 +9202,8 @@
             "support": {
                 "source": "https://github.com/symfony/css-selector/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -9026,7 +9265,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -9040,7 +9280,8 @@
             "support": {
                 "source": "https://github.com/symfony/debug-bundle/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -9098,7 +9339,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -9112,7 +9354,8 @@
             "support": {
                 "source": "https://github.com/symfony/dom-crawler/tree/v5.2.0-RC2"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -9181,10 +9424,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
             "description": "Symfony Maker helps you create empty commands, controllers, form classes, tests and more so you can forget about writing boilerplate code.",
             "homepage": "https://symfony.com/doc/current/bundles/SymfonyMakerBundle/index.html",
             "keywords": [
@@ -9197,7 +9442,8 @@
                 "issues": "https://github.com/symfony/maker-bundle/issues",
                 "source": "https://github.com/symfony/maker-bundle/tree/v1.25.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -9264,7 +9510,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -9278,7 +9525,8 @@
             "support": {
                 "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.0"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
@@ -9339,7 +9587,8 @@
             "license": [
                 "MIT"
             ],
-            "authors": [{
+            "authors": [
+                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -9353,7 +9602,8 @@
             "support": {
                 "source": "https://github.com/symfony/web-profiler-bundle/tree/v5.1.9"
             },
-            "funding": [{
+            "funding": [
+                {
                     "url": "https://symfony.com/sponsor",
                     "type": "custom"
                 },
