@@ -20,6 +20,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Setup PHP with pecl extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+       
       - uses: actions/checkout@v2
 
       - name: checks_directory
