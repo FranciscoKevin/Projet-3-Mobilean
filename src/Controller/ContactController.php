@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Form\PartnerType;
+use App\DataClass\Partnership;
 
 /**
  * Creates the views that allow the users send information to Mobilean
@@ -41,22 +42,20 @@ class ContactController extends AbstractController
      */
     public function partner(Request $request): Response
     {
-        $form = $this->createForm(PartnerType::class);
+        $partner = new Partnership();
+        $form = $this->createForm(PartnerType::class, $partner);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // get form data
-            $formData = $form->getData();
-
             // add date of message submition
-            $formData['submitDate'] = date('d/m/Y');
+            $partner->setSubmitDate(date('d/m/Y'));
 
             // add type of message (for after_submit view purposes)
-            $formData['type'] = 'partner';
+            $partner->setType('partner');
 
             // return after submit page
             return $this->render('front/contact/after_submit.html.twig', [
-                'data' => $formData,
+                'data' => $partner,
             ]);
         }
 
