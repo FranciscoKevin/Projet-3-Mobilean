@@ -1,0 +1,5 @@
+<form method="post" action="{{ path('admin_charging_station_delete', {'id': refill_station.id}) }}" onsubmit="return confirm('Etes vous sur de vouloir supprimer cet élement?');">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ refill_station.id) }}">
+    <button class="btn">Supprimer</button>
+</form>
