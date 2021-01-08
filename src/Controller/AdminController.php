@@ -12,6 +12,7 @@ use App\Repository\RefillStationRepository;
 
 /**
  * @Route("/admin", name="admin_")
+ * @IsGranted("ROLE_ADMIN")
  */
 class AdminController extends AbstractController
 {
@@ -64,7 +65,7 @@ class AdminController extends AbstractController
      * @Route("borne-de-recharge/ajouter", name="charging_station_new", methods={"GET","POST"})
      * @return Response
      */
-    public function new(Request $request): Response
+    public function newChargingStation(Request $request): Response
     {
         $refillStation = new RefillStation();
         $form = $this->createForm(RefillStationType::class, $refillStation);
@@ -89,7 +90,7 @@ class AdminController extends AbstractController
      * @Route("borne-de-recharge/{id}", name="charging_station_show", methods={"GET"})
      * @return Response
      */
-    public function show(RefillStation $refillStation): Response
+    public function showChargingStation(RefillStation $refillStation): Response
     {
         return $this->render('admin/charging_station_show.html.twig', [
             'refill_station' => $refillStation,
@@ -101,7 +102,7 @@ class AdminController extends AbstractController
      * @Route("borne-de-recharge/{id}/modifier", name="charging_station_edit", methods={"GET","POST"})
      * @return Response
      */
-    public function edit(Request $request, RefillStation $refillStation): Response
+    public function editChargingStation(Request $request, RefillStation $refillStation): Response
     {
         $form = $this->createForm(RefillStationType::class, $refillStation);
         $form->handleRequest($request);
@@ -123,7 +124,7 @@ class AdminController extends AbstractController
      * @Route("/{id}", name="charging_station_delete", methods={"DELETE"})
      * @return Response
      */
-    public function delete(Request $request, RefillStation $refillStation): Response
+    public function deleteChargingStation(Request $request, RefillStation $refillStation): Response
     {
         if ($this->isCsrfTokenValid('delete' . $refillStation->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
