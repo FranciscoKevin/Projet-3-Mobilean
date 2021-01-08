@@ -6,4 +6,98 @@
 
 {% block body %}
 <h1>Nos Solutions Clés en Main</h1>
+
+  <p class="presentation-text">
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+        including versions of Lorem Ipsum.
+
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking 
+        at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+        as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing 
+        packages and web page editors now use   Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
+        accident, sometimes on purpose (injected humour and the like).
+    </p>
+
+    <section class="presentation-rental">
+        <div> 
+            <h2>Nos offres clé en main en location longue durée</h2>
+            <hr>
+            <p>Un véhicule<br><span>équipé d'origine au GNV par le constructeur</span></p>
+            <p>Une borne de recharge<br><span>installée sur votre réseau de Gaz Naturel domestique</span></p>
+        </div>
+        <img src="/assets/images/logo-mobilean.png" class="logo-mobilean" alt="logo mobilean">
+   </section>
+
+    <section>
+        <h2 id="vehicle-title">Nos véhicules</h2>
+        <h3 class="vehicle-type">Les véhicules utilitaires</h3>
+        <div id="carousel-commercial-vehicles" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-commercial-vehicles" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-commercial-vehicles" data-slide-to="1"></li>
+                <li data-target="#carousel-commercial-vehicles" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="First slide">
+                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule utilitaire 1</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Second slide">
+                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule utilitaire 2</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Third slide">
+                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule utilitaire 3</figcaption>
+                </figure>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-commercial-vehicles" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-commercial-vehicles" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="vehicle-type">Les véhicules particuliers</h3>
+        <div id="carousel-private-vehicles" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-private-vehicles" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-private-vehicles" data-slide-to="1"></li>
+                <li data-target="#carousel-private-vehicles" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="First slide">
+                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule particulier 1</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Second slide">
+                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule particulier 2</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Third slide">
+                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule particulier 3</figcaption>
+                </figure>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-private-vehicles" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-private-vehicles" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
 {% endblock %}

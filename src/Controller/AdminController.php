@@ -9,9 +9,11 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Vehicle;
 use App\Form\VehicleType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/admin", name="admin_")
+ * @IsGranted("ROLE_ADMIN")
  */
 class AdminController extends AbstractController
 {
@@ -72,7 +74,7 @@ class AdminController extends AbstractController
      * @Route("vehicule/ajouter", name="vehicle_new", methods={"GET","POST"})
      * @return Response
      */
-    public function new(Request $request): Response
+    public function newVehicle(Request $request): Response
     {
         $vehicle = new Vehicle();
         $form = $this->createForm(VehicleType::class, $vehicle);
@@ -97,7 +99,7 @@ class AdminController extends AbstractController
      * @Route("vehicule/{id}", name="vehicle_show", methods={"GET"})
      * @return Response
      */
-    public function show(Vehicle $vehicle): Response
+    public function showVehicle(Vehicle $vehicle): Response
     {
         return $this->render('admin/vehicle_show.html.twig', [
             'vehicle' => $vehicle,
@@ -109,7 +111,7 @@ class AdminController extends AbstractController
      * @Route("vehicule/{id}/modifier", name="vehicle_edit", methods={"GET","POST"})
      * @return Response
      */
-    public function edit(Request $request, Vehicle $vehicle): Response
+    public function editVehicle(Request $request, Vehicle $vehicle): Response
     {
         $form = $this->createForm(VehicleType::class, $vehicle);
         $form->handleRequest($request);
@@ -131,7 +133,7 @@ class AdminController extends AbstractController
      * @Route("/{id}", name="vehicle_delete", methods={"DELETE"})
      * @return Response
      */
-    public function delete(Request $request, Vehicle $vehicle): Response
+    public function deleteVehicle(Request $request, Vehicle $vehicle): Response
     {
         if ($this->isCsrfTokenValid('delete' . $vehicle->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
