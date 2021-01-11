@@ -6,4 +6,42 @@
 
 {% block body %}
 <h1>Catalogue de Bornes de Recharge</h1>
+<table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Debit</th>
+                <th>Installation</th>
+                <th>Temps de recharge</th>
+                <th>Stockage supplémentaire</th>
+                <th>Photo</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for refill_station in refill_stations %}
+            <tr>
+                <td>{{ refill_station.id }}</td>
+                <td>{{ refill_station.name }}</td>
+                <td>{{ refill_station.description }}</td>
+                <td>{{ refill_station.debit }}</td>
+                <td>{{ refill_station.installation }}</td>
+                <td>{{ refill_station.refillTime }}</td>
+                <td>{{ refill_station.additionalStorage ? 'Yes' : 'No' }}</td>
+                <td>{{ refill_station.photo }}</td>
+                <td>
+                    <a href="{{ path('admin_charging_station_show', {'id': refill_station.id}) }}">Voir</a>
+                    <a href="{{ path('admin_charging_station_edit', {'id': refill_station.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">Aucune bornes trouvée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ path('admin_charging_station_new') }}">Ajouter</a>
 {% endblock %}
