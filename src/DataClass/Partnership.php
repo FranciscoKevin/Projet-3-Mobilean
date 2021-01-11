@@ -2,6 +2,7 @@
 
 namespace App\DataClass;
 
+use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -11,36 +12,37 @@ class Partnership
 {
     /**
      * @Assert\NotBlank()
-     * @Assert\Length(min="2", max="255")
+     * @Assert\Length(min=2, max=255)
      */
     private string $businessName;
 
     /**
      * @Assert\NotBlank()
+     * @Assert\Regex(pattern="/\b(?:Installation|Maintenance|Autre|Aucune)\b/")
      */
     private string $expertise;
 
     /**
-     * @Assert\Length(min="2", max="255")
+     * @Assert\Length(min=2, max=255)
      */
-    private ?string $otherExpertise;
+    private ?string $otherExpertise = 'Autre';
 
     /**
      * @Assert\NotBlank()
      * @Assert\Regex(pattern="/^[0-9]+$/")
-     * @Assert\Length(min="9", max="9")
+     * @Assert\Length(min=9, max=9)
      */
     private string $numberSIREN;
 
     /**
      * @Assert\NotBlank()
-     * @Assert\Length(min="2", max="255")
+     * @Assert\Length(min=2, max=255)
      */
     private string $fullName;
 
     /**
      * @Assert\NotBlank()
-     * @Assert\Length(min="2", max="255")
+     * @Assert\Length(min=2, max=255)
      */
     private string $jobTitle;
 
@@ -51,25 +53,26 @@ class Partnership
 
     /**
      * @Assert\NotBlank()
+     * @Assert\Email()
      */
     private string $email;
 
     /**
      * @Assert\NotBlank()
-     * @Assert\Length(min="5", max="255")
+     * @Assert\Length(min=5, max=255)
      */
     private string $address;
 
     /**
      * @Assert\NotBlank()
      * @Assert\Regex(pattern="/^[0-9]+$/")
-     * @Assert\Length(min="5", max="5")
+     * @Assert\Length(min=5, max=5)
      */
     private string $zipCode;
 
     /**
      * @Assert\NotBlank()
-     * @Assert\Length(min="1", max="255")
+     * @Assert\Length(min=1, max=255)
      */
     private string $city;
 
@@ -80,11 +83,14 @@ class Partnership
     private int $workforce;
 
     /**
-     * @Assert\Length(max="2000")
+     * @Assert\Length(max=2000)
      */
     private ?string $message = null;
 
-    private string $submitDate;
+    /**
+     * @Assert\Date()
+     */
+    private DateTime $submitDate;
 
     private string $type;
 
@@ -244,12 +250,12 @@ class Partnership
         return $this;
     }
 
-    public function getSubmitDate(): ?string
+    public function getSubmitDate(): ?DateTime
     {
         return $this->submitDate;
     }
 
-    public function setsubmitDate(string $submitDate): self
+    public function setsubmitDate(DateTime $submitDate): self
     {
         $this->submitDate = $submitDate;
 

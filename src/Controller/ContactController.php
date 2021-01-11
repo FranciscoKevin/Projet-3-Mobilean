@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Form\PartnerType;
 use App\DataClass\Partnership;
+use DateTime;
 
 /**
  * Creates the views that allow the users send information to Mobilean
@@ -47,8 +48,8 @@ class ContactController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // add date of message submition
-            $partner->setSubmitDate(date('d/m/Y'));
+            // add date of message submission
+            $partner->setSubmitDate(new DateTime('now'));
 
             // add type of message (for after_submit view purposes)
             $partner->setType('partner');

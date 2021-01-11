@@ -11,7 +11,7 @@
 <h2>Résumé :</h2>
 <ul>
 {% if data.type == 'partner' %}
-    <li>Date d'envoi de la demande : {{ data.submitDate }}</li><br>
+    <li>Date d'envoi de la demande : {{ data.submitDate|date('d/m/Y') }}</li><br>
     <li>Raison sociale : {{ data.businessName }}</li><br>
     <li>Expertise : 
         {% if data.expertise == 'Autre' %}
