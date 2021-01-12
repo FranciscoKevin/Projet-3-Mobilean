@@ -6,9 +6,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\VehicleRepository;
-use App\Entity\Vehicle;
-use App\Repository\chargingStations;
-use App\Entity\RefillStation;
 
 /**
  * Creates views that allow users to see the different products
