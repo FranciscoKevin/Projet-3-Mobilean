@@ -1,0 +1,70 @@
+{% extends 'admin/admin_layout.html.twig' %}
+
+{% block title %}Le véhicule{% endblock %}
+
+{% block body %}
+    <h1>Détail du véhicule</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ vehicle.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ vehicle.name }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ vehicle.description }}</td>
+            </tr>
+            <tr>
+                <th>Type de véhicule</th>
+                <td>{{ vehicle.type }}</td>
+            </tr>
+            <tr>
+                <th>Puissance fiscal</th>
+                <td>{{ vehicle.fiscalPower }}</td>
+            </tr>
+            <tr>
+                <th>Puissance réelle</th>
+                <td>{{ vehicle.actualPower }}</td>
+            </tr>
+            <tr>
+                <th>Capacité réservoir GNV</th>
+                <td>{{ vehicle.tankCapacityCNG }}</td>
+            </tr>
+            <tr>
+                <th>Consommation GNV</th>
+                <td>{{ vehicle.consumptionCNG }}</td>
+            </tr>
+            <tr>
+                <th>Capacité carburant</th>
+                <td>{{ vehicle.tankCapacityFuel }}</td>
+            </tr>
+            <tr>
+                <th>Consommation carburant</th>
+                <td>{{ vehicle.consumptionFuel }}</td>
+            </tr>
+            <tr>
+                <th>Autonomie</th>
+                <td>{{ vehicle.autonomy }}</td>
+            </tr>
+            <tr>
+                <th>Vol.compartiment arrière</th>
+                <td>{{ vehicle.rearVolume }}</td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td>{{ vehicle.photo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin_vehicles') }}">Retour sur les véhicules</a>
+
+    <a href="{{ path('admin_vehicle_edit', {'id': vehicle.id}) }}">Modifier</a>
+
+    {{ include('admin/vehicle_delete_form.html.twig') }}
+{% endblock %}

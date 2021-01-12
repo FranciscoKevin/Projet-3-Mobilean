@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\VehicleRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=VehicleRepository::class)
@@ -19,61 +20,74 @@ class Vehicle
 
     /**
      * @ORM\Column(type="string", length=50, nullable=false)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=2, max=255)
      */
     private string $name;
 
     /**
      * @ORM\Column(type="text", nullable=false)
+     * @Assert\NotBlank()
      */
     private string $description;
 
     /**
      * @ORM\Column(type="string", length=50, nullable=false)
+     * @Assert\Choice({"Utilitaire", "Particulier"})
      */
     private string $type;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $fiscalPower;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $actualPower;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $tankCapacityCNG;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $consumptionCNG;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $tankCapacityFuel;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $consumptionFuel;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $autonomy;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $rearVolume;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\NotBlank()
      */
     private ?string $photo;
 
