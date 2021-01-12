@@ -4,8 +4,11 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
+use App\Repository\VehicleRepository;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Vehicle;
+use App\Form\VehicleType;
 use App\Entity\RefillStation;
 use App\Form\RefillStationType;
 use App\Repository\RefillStationRepository;
@@ -18,7 +21,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 class AdminController extends AbstractController
 {
     /**
+     * Displays the page home administrator
      * @Route(name="home")
+     * @return Response
      */
     public function home(): Response
     {
@@ -26,11 +31,15 @@ class AdminController extends AbstractController
     }
 
     /**
+     * Displays the page with the all vehicles
      * @Route("/vehicules", name="vehicles")
+     * @return Response
      */
-    public function vehicles(): Response
+    public function vehicles(VehicleRepository $vehicleRepository): Response
     {
-        return $this->render('admin/vehicles.html.twig');
+        return $this->render('admin/vehicle_list.html.twig', [
+            'vehicles' => $vehicleRepository->findAll(),
+        ]);
     }
 
     /**
@@ -46,7 +55,9 @@ class AdminController extends AbstractController
     }
 
     /**
+     * Displays the page for a quote request
      * @Route("/demandes-de-devis", name="estimates")
+     * @return Response
      */
     public function estimates(): Response
     {
@@ -54,7 +65,9 @@ class AdminController extends AbstractController
     }
 
     /**
+     * Displays the page for a partnership request
      * @Route("/demandes-de-partenariat", name="partners")
+     * @return Response
      */
     public function partners(): Response
     {
