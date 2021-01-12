@@ -66,7 +66,13 @@ class EstimateIndividuals
     /**
      * @Assert\NotBlank()
      * @Assert\Count(min=1, max=2)
-     * @Assert\Choice({["commercialVehicles"], ["tourismVehicles"], ["tourismVehicles", "commercialVehicles"]})
+     * @Assert\Collection(
+     *      fields={
+     *          "0"=@Assert\Choice({"commercialVehicles", "tourismVehicles"}),
+     *          "1"=@Assert\Choice({"tourismVehicles", "commercialVehicles"})
+     *      },
+     *      allowMissingFields = true
+     * )
      * @var string[]
      */
     private array $typeOfVehicles;
