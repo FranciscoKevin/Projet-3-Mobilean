@@ -62,7 +62,7 @@ class EstimateIndividualsType extends AbstractType
             ->add('typeOfVehicles', ChoiceType::class, [
                 'choices' => [
                     'Véhicules utilitaires' => 'commercialVehicles',
-                    'Véhicules de tourisme' => 'tourismVehicle',
+                    'Véhicules de tourisme' => 'tourismVehicles',
                 ],
                 'label' => 'Quel(s) type(s) de véhicule(s) possédez vous? ',
                 'expanded' => true,

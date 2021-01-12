@@ -66,6 +66,7 @@ class EstimateIndividuals
     /**
      * @Assert\NotBlank()
      * @Assert\Count(min=1, max=2)
+     * @Assert\Choice({["commercialVehicles"], ["tourismVehicles"], ["tourismVehicles", "commercialVehicles"]})
      * @var string[]
      */
     private array $typeOfVehicles;
