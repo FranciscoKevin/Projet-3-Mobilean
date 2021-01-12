@@ -1,10 +1,8 @@
-
 .vehicle-description {
     margin: auto;
     width: 70%;
     padding-top: 20px;
 }
-
 
 .vehicule-details-title {
     margin-top: 50px;
@@ -16,7 +14,7 @@
     border: 2px solid #BDC1BC;
     margin-top: 50px;
     border-radius: 10px;
-    box-shadow:2px 2px 2px gray,
+    box-shadow: 2px 2px 2px gray,
     -1px -1px 2px white;
     background-color: #F2F4F1;
     padding-bottom: 20px;
@@ -32,19 +30,19 @@
 
 .request-button {
     display: block;
-    margin : auto;
+    margin: auto;
 }
 
 .vehicle-picture{
-    height : 600px;
+    height: 600px;
     width: 600px;
-    display : flex;
+    display: flex;
     justify-content: center;
 }
 
 .request-button {
     border: 1px solid #999;
-	padding:10px 10px;
+	padding: 10px 10px;
 	border-radius:10px;
 	box-shadow:2px 2px 6px #999;
 	background:#fff;
