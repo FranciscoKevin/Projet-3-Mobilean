@@ -23,7 +23,7 @@ class AdminProductController extends AbstractController
 {
      /**
      * Displays the page for add a new vehicle
-     * @Route("vehicule/ajouter", name="vehicle_new", methods={"GET","POST"})
+     * @Route("/vehicule/ajouter", name="vehicle_new", methods={"GET","POST"})
      * @return Response
      */
     public function newVehicle(Request $request, EntityManagerInterface $manager): Response
@@ -47,7 +47,7 @@ class AdminProductController extends AbstractController
 
     /**
      * Displays the page for add a new charging-station
-     * @Route("borne-de-recharge/ajouter", name="charging_station_new", methods={"GET","POST"})
+     * @Route("/borne-de-recharge/ajouter", name="charging_station_new", methods={"GET","POST"})
      * @return Response
      */
     public function newChargingStation(Request $request, EntityManagerInterface $manager): Response
@@ -71,7 +71,7 @@ class AdminProductController extends AbstractController
 
     /**
      * Displays the page view vehicle details
-     * @Route("vehicule/{id}", name="vehicle_show", methods={"GET"})
+     * @Route("/vehicule/{id}", name="vehicle_show", methods={"GET"})
      * @return Response
      */
     public function showVehicle(Vehicle $vehicle): Response
@@ -83,7 +83,7 @@ class AdminProductController extends AbstractController
 
     /**
      * Displays the page view charging-station details
-     * @Route("borne-de-recharge/{id}", name="charging_station_show", methods={"GET"})
+     * @Route("/borne-de-recharge/{id}", name="charging_station_show", methods={"GET"})
      * @return Response
      */
     public function showChargingStation(RefillStation $refillStation): Response
@@ -95,7 +95,7 @@ class AdminProductController extends AbstractController
 
     /**
      * Provides access to the page to modify a vehicle
-     * @Route("vehicule/{id}/modifier", name="vehicle_edit", methods={"GET","POST"})
+     * @Route("/vehicule/{id}/modifier", name="vehicle_edit", methods={"GET","POST"})
      * @return Response
      */
     public function editVehicle(Request $request, Vehicle $vehicle, EntityManagerInterface $manager): Response
@@ -119,7 +119,7 @@ class AdminProductController extends AbstractController
 
      /**
      * Provides access to the page to modify a charging-station
-     * @Route("borne-de-recharge/{id}/modifier", name="charging_station_edit", methods={"GET","POST"})
+     * @Route("/borne-de-recharge/{id}/modifier", name="charging_station_edit", methods={"GET","POST"})
      * @return Response
      */
     public function editChargingStation(
