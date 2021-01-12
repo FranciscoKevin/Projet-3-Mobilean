@@ -112,7 +112,6 @@ class AdminProductController extends AbstractController
         }
 
         return $this->render('admin/vehicle_edit.html.twig', [
-            'vehicle' => $vehicle,
             'form' => $form->createView(),
         ]);
     }
@@ -139,7 +138,6 @@ class AdminProductController extends AbstractController
         }
 
         return $this->render('admin/charging_station_edit.html.twig', [
-            'refill_station' => $refillStation,
             'form' => $form->createView(),
         ]);
     }
