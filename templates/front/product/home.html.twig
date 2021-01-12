@@ -16,7 +16,8 @@
         including versions of Lorem Ipsum.
 
         Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking 
+        It is a long establisheNos véhicules
+        d fact that a reader will be distracted by the readable content of a page when looking 
         at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
         as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing 
         packages and web page editors now use   Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
@@ -26,12 +27,17 @@
 
     <section class="presentation-rental">
         <div> 
-            <h2>Nos offres clé en main en location longue durée</h2>
+            <h2 class="Offerpresentation">Nos offres clé en main en location longue durée</h2>
             <hr>
-            <p>Un véhicule<br><span>équipé d'origine au GNV par le constructeur</span></p>
-            <p>Une borne de recharge<br><span>installée sur votre réseau de Gaz Naturel domestique</span></p>
+            <ul class="vehicle-list">
+                <li class="vehicle-detail-left"><img src="/assets/images/car.resized.png" class="" alt="logo mobilean"></li>
+                <li class="vehicle-detail-right"><img src="/assets/images/petrol.resized.png" class="" alt="logo mobilean"></li>
+                <li class="vehicle-detail-left" id="vehicle-right">Un véhicule :</li>
+                <li class="vehicle-detail-right" id="vehicle-left">Une borne de recharge :</li>
+                <li class="vehicle-detail-left">équipé d'origine au GNV par le constructeur</li>
+                <li class="vehicle-detail-right">installée sur votre réseau de Gaz Naturel domestique</li>
+            </ul>
         </div>
-        <img src="/assets/images/logo-mobilean.png" class="logo-mobilean" alt="logo mobilean">
    </section>
 
     <section>
@@ -45,16 +51,31 @@
             </ol>
             <div class="carousel-inner">
                 <figure class="carousel-item active">
-                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="First slide">
-                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule utilitaire 1</figcaption>
+                    <a href="{{ path('product_vehicle')}}"><img class="d-block w-100" src="/assets/images/arona4.jpg" alt="First slide" ></a>
+                    <h4>le titre 1</h4>
+                        <div class="col-md-6">
+                        {% for vehicle in vehicles %}
+                            <a href="{{ path('product_vehicle', { vehicleId: vehicle.id }) }}"> Détails du vehicule : {{ vehicle.name }}</a>
+                        {% endfor %}
+                        </div>
                 </figure>
                 <figure class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Second slide">
-                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule utilitaire 2</figcaption>
+                    <a href="{{ path('product_vehicle')}}"><img class="d-block w-100" src="/assets/images/arona4.jpg" alt="Second slide"></a>
+                    <h4>le titre2</h4>
+                    <div class="col-md-6">
+                        {% for vehicle in vehicles %}
+                            <a href="{{ path('product_vehicle', { vehicleId: vehicle.id }) }}"> Détails du vehicule : {{ vehicle.name }}</a>
+                        {% endfor %}                       
+                    </div>
                 </figure>
                 <figure class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Third slide">
-                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule utilitaire 3</figcaption>
+                    <a href="{{ path('product_vehicle')}}"><img class="d-block w-100" src="/assets/images/arona4.jpg" alt="Third slide"></a>
+                    <h4>le titre3</h4>
+                    <div class="col-md-6">
+                        {% for vehicle in vehicles %}
+                            <a href="{{ path('product_vehicle', { vehicleId: vehicle.id }) }}"> Détails du vehicule : {{ vehicle.name }}</a>
+                        {% endfor %}                       
+                    </div>
                 </figure>
             </div>
             <a class="carousel-control-prev" href="#carousel-commercial-vehicles" role="button" data-slide="prev">
@@ -68,7 +89,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="section-vehicle">        
         <h3 class="vehicle-type">Les véhicules particuliers</h3>
         <div id="carousel-private-vehicles" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -78,16 +99,31 @@
             </ol>
             <div class="carousel-inner">
                 <figure class="carousel-item active">
-                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="First slide">
-                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule particulier 1</figcaption>
+                    <a href="{{ path('product_vehicle')}}"><img class="d-block w-100" src="/assets/images/arona4.jpg" alt="First slide" ></a>
+                    <h4>le titre 1</h4>
+                        <div class="col-md-6">
+                        {% for vehicle in vehicles %}
+                            <a href="{{ path('product_vehicle', { vehicleId: vehicle.id }) }}"> Détails du vehicule : {{ vehicle.name }}</a>
+                        {% endfor %}
+                        </div>
                 </figure>
                 <figure class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Second slide">
-                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule particulier 2</figcaption>
+                    <a href="{{ path('product_vehicle')}}"><img class="d-block w-100" src="/assets/images/arona4.jpg" alt="Second slide"></a>
+                    <h4>le titre2</h4>
+                    <div class="col-md-6">
+                        {% for vehicle in vehicles %}
+                            <a href="{{ path('product_vehicle', { vehicleId: vehicle.id }) }}"> Détails du vehicule : {{ vehicle.name }}</a>
+                        {% endfor %}                       
+                    </div>
                 </figure>
                 <figure class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/150C/Ohttps://placeholder.com/" alt="Third slide">
-                    <figcaption class="carousel-caption d-none d-md-block">Nom du véhicule particulier 3</figcaption>
+                    <a href="{{ path('product_vehicle')}}"><img class="d-block w-100" src="/assets/images/arona4.jpg" alt="Third slide"></a>
+                    <h4>le titre3</h4>
+                    <div class="col-md-6">
+                        {% for vehicle in vehicles %}
+                            <a href="{{ path('product_vehicle', { vehicleId: vehicle.id }) }}"> Détails du vehicule : {{ vehicle.name }}</a>
+                        {% endfor %}                       
+                    </div>
                 </figure>
             </div>
             <a class="carousel-control-prev" href="#carousel-private-vehicles" role="button" data-slide="prev">

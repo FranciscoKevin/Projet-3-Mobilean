@@ -5,6 +5,10 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Repository\VehicleRepository;
+use App\Entity\Vehicle;
+use App\Repository\chargingStations;
+use App\Entity\RefillStation;
 
 /**
  * Creates views that allow users to see the different products
@@ -17,9 +21,11 @@ class ProductController extends AbstractController
      * @Route("/", name="vehicles")
      * @return Response
      */
-    public function home(): Response
+    public function home(VehicleRepository $vehicleRepository): Response
     {
-        return $this->render('front/product/home.html.twig');
+        return $this->render('front/product/home.html.twig', [
+            'vehicles' => $vehicleRepository->findAll(),
+        ]);
     }
 
     /**
@@ -30,5 +36,15 @@ class ProductController extends AbstractController
     public function chargingStations(): Response
     {
         return $this->render('front/product/charging_stations.html.twig');
+    }
+
+    /**
+     * Displays informations about the charging stations
+     * @Route("/vehicle", name="vehicle")
+     * @return Response
+     */
+    public function vehicle(): Response
+    {
+        return $this->render('front/product/vehicle.html.twig');
     }
 }

@@ -1,0 +1,65 @@
+{# This is the page that will display informations about one vehicle #}
+
+{% extends 'front/front_layout.html.twig' %}
+
+{% block title %}vehicle - {{ parent() }}{% endblock %}
+
+{% block body %}
+<h1>Nos vehicules</h1>
+
+  <p class="presentation-text">
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+        including versions of Lorem Ipsum.
+
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking 
+        at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+        as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing 
+        packages and web page editors now use   Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
+        accident, sometimes on purpose (injected humour and the like).
+    </p>
+
+    <section class="presentation-rental">
+        <div> 
+            <h2 class="Offerpresentation">Nos offres clé en main en location longue durée</h2>
+            <hr>
+            <ul class="vehicle-list">
+                <li class="vehicle-detail-left"><img src="/assets/images/car.png" class="" alt="logo mobilean"></li>
+                <li class="vehicle-detail-right"><img src="/assets/images/petrol.png" class="" alt="logo mobilean"></li>
+                <li class="vehicle-detail-left" id="vehicle-right">Un véhicule :</li>
+                <li class="vehicle-detail-right" id="vehicle-left">Une borne de recharge :</li>
+                <li class="vehicle-detail-left">équipé d'origine au GNV par le constructeur</li>
+                <li class="vehicle-detail-right">installée sur votre réseau de Gaz Naturel domestique</li>
+            </ul>
+        </div>
+   </section>
+
+    <section>
+        <h2 id="vehicle-title">Nom de la voiture</h2>
+        <div class="vehicle-description">
+            <img class= "vehicle-picture" src="https://via.placeholder.com/400C/Ohttps://placeholder.com/">
+            <div class="vehicule-details">
+                <h3 class="vehicule-details-title">Caractéristiques du véhicule</h3>
+                <ul>
+                    <li class="vehicule-detail">Description :</li>
+                    <hr class="hr">
+                    <li class="vehicule-detail">actualpower :</li>
+                    <hr class="hr">
+                    <li class="vehicule-detail">tankCapacityFuel :</li>
+                    <hr class="hr">
+                    <li class="vehicule-detail">consumptionCNG :</li>
+                    <hr class="hr">
+                    <li class="vehicule-detail">autonomy :</li>
+                    <hr class="hr">
+                    <li class="vehicule-detail">rearVolume :</li>
+                </ul>
+                <a href="{{path('contact_estimate')}}"><input class="request-button" type="button" value="Demande de devis"></a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
