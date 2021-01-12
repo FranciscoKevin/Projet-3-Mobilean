@@ -6,4 +6,9 @@
 
 {% block body %}
 <h1>Je Décris mon Besoin</h1>
+
+{{ form_start(formIndividuals) }}
+    {{ form_widget(formIndividuals) }}
+    <button>Envoyer</button>
+{{ form_end(formIndividuals) }}
 {% endblock %}
