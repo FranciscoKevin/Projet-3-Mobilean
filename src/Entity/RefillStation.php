@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\RefillStationRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=RefillStationRepository::class)
@@ -19,36 +20,44 @@ class RefillStation
 
     /**
      * @ORM\Column(type="string", length=50, nullable=false)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=2, max=255)
      */
     private string $name;
 
     /**
      * @ORM\Column(type="text", nullable=false)
+     * @Assert\NotBlank()
      */
     private string $description;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $debit;
 
     /**
      * @ORM\Column(type="string", length=100, nullable=true)
+     * @Assert\Choice({"Intérieur", "Extérieur, Les deux"})
      */
     private ?string $installation;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Positive()
      */
     private ?int $refillTime;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
+     * @Assert\Type(type="bool")
      */
     private ?bool $additionalStorage;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\NotBlank()
      */
     private ?string $photo;
 
