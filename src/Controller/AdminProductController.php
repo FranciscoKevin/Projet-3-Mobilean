@@ -147,7 +147,7 @@ class AdminProductController extends AbstractController
 
     /**
      * Displays the page for delete a vehicle
-     * @Route("/vehicule/{id}", name="vehicle_delete", methods={"DELETE"})
+     * @Route("/vehicule/supprimer/{id}", name="vehicle_delete", methods={"DELETE"})
      * @return Response
      */
     public function deleteVehicle(Request $request, Vehicle $vehicle, EntityManagerInterface $manager): Response
@@ -163,7 +163,7 @@ class AdminProductController extends AbstractController
 
     /**
      * Displays the page for delete a charging-station
-     * @Route("/borne-de-recharge/{id}", name="charging_station_delete", methods={"DELETE"})
+     * @Route("/borne-de-recharge/supprimer/{id}", name="charging_station_delete", methods={"DELETE"})
      * @return Response
      */
     public function deleteChargingStation(
