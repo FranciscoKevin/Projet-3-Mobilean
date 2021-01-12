@@ -1,0 +1,35 @@
+{# This is the page that displays a message to tell the user their message has been submitted #}
+
+{% extends 'front/front_layout.html.twig' %}
+
+{% block title %}Message envoyé -  {{ parent() }}{% endblock %}
+
+{% block body %}
+<h1>Merci pour votre demande</h1>
+<p>Votre message a bien été envoyé, l'équipe Mobilean vous recontactera sous peu.</p>
+
+<h2>Résumé :</h2>
+<ul>
+{% if data.type == 'partner' %}
+    <li>Date d'envoi de la demande : {{ data.submitDate|date('d/m/Y') }}</li><br>
+    <li>Raison sociale : {{ data.businessName }}</li><br>
+    <li>Expertise : 
+        {% if data.expertise == 'Autre' %}
+            {{ data.otherExpertise }}
+        {% else %}
+            {{ data.expertise }}
+        {% endif %}</li><br>
+    <li>Numéro SIREN : {{ data.numberSIREN }}</li><br>
+    <li>Nom complet de la personne à contacter : {{ data.fullName }}</li><br>
+    <li>Fonction de la personne à contacter : {{ data.jobTitle }}</li><br>
+    <li>Téléphone : {{ data.telephone }}</li><br>
+    <li>E-mail : {{ data.email }}</li><br>
+    <li>Adresse : {{ data.address }}, {{ data.zipCode }} {{ data.city|upper }}</li><br>
+    <li>Effectif : {{ data.workforce }}</li><br>
+    {% if data.message is not empty %}
+        <li>Message : {{ data.message }}</li><br>
+    {% endif %}
+{% endif %}
+</ul>
+<a href="{{path('product_vehicles')}}">Revenir au site</a>
+{% endblock %}

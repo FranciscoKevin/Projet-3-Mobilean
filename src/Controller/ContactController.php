@@ -4,7 +4,11 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Form\PartnerType;
+use App\DataClass\Partnership;
+use DateTime;
 
 /**
  * Creates the views that allow the users send information to Mobilean
@@ -37,8 +41,27 @@ class ContactController extends AbstractController
      * @Route("/demande-de-partenariat", name="partner")
      * @return Response
      */
-    public function partner(): Response
+    public function partner(Request $request): Response
     {
-        return $this->render('front/contact/partner.html.twig');
+        $partner = new Partnership();
+        $form = $this->createForm(PartnerType::class, $partner);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // add date of message submission
+            $partner->setSubmitDate(new DateTime('now'));
+
+            // add type of message (for after_submit view purposes)
+            $partner->setType('partner');
+
+            // return after submit page
+            return $this->render('front/contact/after_submit.html.twig', [
+                'data' => $partner,
+            ]);
+        }
+
+        return $this->render('front/contact/partner.html.twig', [
+            'form' => $form->createView(),
+        ]);
     }
 }
