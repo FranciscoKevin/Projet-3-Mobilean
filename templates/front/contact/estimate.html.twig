@@ -7,8 +7,15 @@
 {% block body %}
 <h1>Je Décris mon Besoin</h1>
 
+<h2>Je suis un particulier :</h2>
 {{ form_start(formIndividuals) }}
     {{ form_widget(formIndividuals) }}
     <button>Envoyer</button>
 {{ form_end(formIndividuals) }}
+
+<h2>Je suis une entreprise :</h2>
+{{ form_start(formCompanies) }}
+    {{ form_widget(formCompanies) }}
+    <button>Envoyer</button>
+{{ form_end(formCompanies) }}
 {% endblock %}

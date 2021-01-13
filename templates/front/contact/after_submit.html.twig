@@ -58,6 +58,48 @@
         <li>Message : {{ data.message }}</li><br>
     {% endif %}
 {% endif %}
+
+{% if data.type == 'estimateCompanies' %}
+    <li>Date d'envoi de la demande : {{ data.submitDate|date('d/m/Y') }}</li><br>
+    <li>Raison sociale : {{ data.businessName }}</li><br>
+    <li>Numéro SIREN : {{ data.numberSIREN }}</li><br>
+    <li>Nom complet de la personne à contacter : {{ data.fullName }}</li><br>
+    <li>Fonction de la personne à contacter : {{ data.jobTitle }}</li><br>
+    <li>Téléphone : {{ data.telephone }}</li><br>
+    <li>E-mail : {{ data.email }}</li><br>
+    <li>Adresse : {{ data.address }}, {{ data.zipCode }} {{ data.city|upper }}</li><br>
+    <li>Local connecté au gaz naturel : 
+        {% if data.isConnectedToGas == true %}
+            Oui
+        {% else %}
+            Non
+        {% endif %}</li><br>
+    <li>Nombre de véhicules : {{ data.numberOfVehicles }}</li><br>
+    <li>Type(s) de véhicule(s) : 
+        {% if data.typeOfVehicles|length == 3 %}
+            Tourisme, utilitaires, poids lourds
+        {% elseif data.typeOfVehicles|length == 2 %}
+            {% if data.typeOfVehicles[0] == 'commercialVehicles' %}
+                {% if data.typeOfVehicles[1] == 'tourismVehicles' %}
+                    Toursime et utilitaires
+                {% else %}
+                    Utilitaires et poids lourds
+                {% endif %}
+            {% else %}
+                Tourisme et poids lourds
+            {% endif %}
+        {% elseif data.typeOfVehicles[0] == 'commercialVehicles' %}
+            Utilitaires
+        {% elseif data.typeOfVehicles[0] == 'tourismVehicles' %}
+            Tourisme
+        {% elseif data.typeOfVehicles[0] == 'heavyTrucks' %}
+            Poids lourds
+        {% endif %}</li><br>
+    <li>Distance moyenne par véhicule par an : {{ data.averageDistance }}km</li><br>
+    {% if data.message is not empty %}
+        <li>Message : {{ data.message }}</li><br>
+    {% endif %}
+{% endif %}
 </ul>
 <a href="{{path('product_vehicles')}}">Revenir au site</a>
 {% endblock %}
