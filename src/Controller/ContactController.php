@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Form\PartnerType;
 use App\DataClass\Partnership;
+use App\Form\EstimateIndividualsType;
+use App\DataClass\EstimateIndividuals;
 use DateTime;
 
 /**
@@ -31,9 +33,28 @@ class ContactController extends AbstractController
      * @Route("/demande-de-devis", name="estimate")
      * @return Response
      */
-    public function estimate(): Response
+    public function estimate(Request $request): Response
     {
-        return $this->render('front/contact/estimate.html.twig');
+        $estimateIndividuals = new EstimateIndividuals();
+        $formIndividuals = $this->createForm(EstimateIndividualsType::class, $estimateIndividuals);
+        $formIndividuals->handleRequest($request);
+
+        if ($formIndividuals->isSubmitted() && $formIndividuals->isValid()) {
+            // add date of message submission
+            $estimateIndividuals->setSubmitDate(new DateTime('now'));
+
+            // add type of message (for after_submit view purposes)
+            $estimateIndividuals->setType('estimateIndividuals');
+
+            // return after submit page
+            return $this->render('front/contact/after_submit.html.twig', [
+                'data' => $estimateIndividuals,
+            ]);
+        }
+
+        return $this->render('front/contact/estimate.html.twig', [
+            'formIndividuals' => $formIndividuals->createView(),
+        ]);
     }
 
     /**
