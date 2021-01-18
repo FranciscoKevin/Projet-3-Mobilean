@@ -89,13 +89,13 @@ class AdminProductController extends AbstractController
     public function showChargingStation(RefillStation $refillStation): Response
     {
         return $this->render('admin/charging_station_show.html.twig', [
-            'refill_station' => $refillStation,
+            'refillStation' => $refillStation,
         ]);
     }
 
     /**
      * Provides access to the page to modify a vehicle
-     * @Route("/vehicule/{id}/modifier", name="vehicle_edit", methods={"GET","POST"})
+     * @Route("/vehicule/modifier/{id}", name="vehicle_edit", methods={"GET","POST"})
      * @return Response
      */
     public function editVehicle(Request $request, Vehicle $vehicle, EntityManagerInterface $manager): Response
@@ -112,13 +112,14 @@ class AdminProductController extends AbstractController
         }
 
         return $this->render('admin/vehicle_edit.html.twig', [
+            'vehicle' => $vehicle,
             'form' => $form->createView(),
         ]);
     }
 
      /**
      * Provides access to the page to modify a charging-station
-     * @Route("/borne-de-recharge/{id}/modifier", name="charging_station_edit", methods={"GET","POST"})
+     * @Route("/borne-de-recharge/modifier/{id}", name="charging_station_edit", methods={"GET","POST"})
      * @return Response
      */
     public function editChargingStation(
@@ -138,6 +139,7 @@ class AdminProductController extends AbstractController
         }
 
         return $this->render('admin/charging_station_edit.html.twig', [
+            'refillStation' => $refillStation,
             'form' => $form->createView(),
         ]);
     }

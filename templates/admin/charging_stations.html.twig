@@ -2,7 +2,7 @@
 
 {% extends 'admin/admin_layout.html.twig' %}
 
-{% block title %}Bornes de recharge - Admin - {{ parent() }}{% endblock %}
+{% block title %}{{ parent() }} - Admin - Catalogue des bornes {% endblock %}
 
 {% block body %}
 <h1>Catalogue de Bornes de Recharge</h1>
@@ -21,19 +21,19 @@
             </tr>
         </thead>
         <tbody>
-        {% for refill_station in refill_stations %}
+        {% for refillStation in refillStations %}
             <tr>
-                <td>{{ refill_station.id }}</td>
-                <td>{{ refill_station.name }}</td>
-                <td>{{ refill_station.description }}</td>
-                <td>{{ refill_station.debit }}</td>
-                <td>{{ refill_station.installation }}</td>
-                <td>{{ refill_station.refillTime }}</td>
-                <td>{{ refill_station.additionalStorage ? 'Yes' : 'No' }}</td>
-                <td>{{ refill_station.photo }}</td>
+                <td>{{ refillStation.id }}</td>
+                <td>{{ refillStation.name }}</td>
+                <td>{{ refillStation.description }}</td>
+                <td>{{ refillStation.debit }}</td>
+                <td>{{ refillStation.installation }}</td>
+                <td>{{ refillStation.refillTime }}</td>
+                <td>{{ refillStation.additionalStorage ? 'Yes' : 'No' }}</td>
+                <td>{{ refillStation.photo }}</td>
                 <td>
-                    <a href="{{ path('admin_charging_station_show', {'id': refill_station.id}) }}">Voir</a>
-                    <a href="{{ path('admin_charging_station_edit', {'id': refill_station.id}) }}">Modifier</a>
+                    <a href="{{ path('admin_charging_station_show', {'id': refillStation.id}) }}">Voir</a>
+                    <a href="{{ path('admin_charging_station_edit', {'id': refillStation.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
