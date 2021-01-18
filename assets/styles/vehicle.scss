@@ -18,6 +18,8 @@
     -1px -1px 2px white;
     background-color: #F2F4F1;
     padding-bottom: 20px;
+    height: 30vw;
+    width:50vw;
 }
 
 .vehicule-detail {
@@ -34,10 +36,14 @@
 }
 
 .vehicle-picture{
-    height: 600px;
-    width: 600px;
-    display: flex;
-    justify-content: center;
+    border: 2px solid #BDC1BC;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray,
+    -1px -1px 2px white;
+    background-color: #F2F4F1;
+    height: 30vw;
+    width:50vw;
+    margin: auto;
 }
 
 .request-button {

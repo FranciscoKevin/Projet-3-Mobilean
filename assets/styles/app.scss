@@ -1,16 +1,37 @@
 @import '~bootstrap/scss/bootstrap';
 
+* {
+    padding:0;
+    margin:0;
+}
+
 html {
-    padding-bottom: 100px;
     padding-top: 70px;
 }
 
 .navbar {
     list-style-type: none;
+    background-color: #348231;
+}
+
+.nav-link {
+    color: white;
 }
 
 body {
-    margin: auto;
-    width: 80%;
     background-color: #D0E1CA;
+}
+
+header, main {
+    width: 80%;
+    margin: auto;
+}
+
+footer {
+    background-color: #348231;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: 4rem;
 }
