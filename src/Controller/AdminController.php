@@ -47,10 +47,10 @@ class AdminController extends AbstractController
      * @Route("/bornes-de-recharge", name="charging_stations")
      * @return Response
      */
-    public function chargingStations(RefillStationRepository $refillStation): Response
+    public function chargingStations(RefillStationRepository $refillRepository): Response
     {
         return $this->render('admin/charging_stations.html.twig', [
-            'refill_stations' => $refillStation->findAll(),
+            'refillStations' => $refillRepository->findAll(),
         ]);
     }
 

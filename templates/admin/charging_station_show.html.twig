@@ -1,6 +1,6 @@
 {% extends 'admin/admin_layout.html.twig' %}
 
-{% block title %}Borne de recharge{% endblock %}
+{% block title %}{{ parent() }} - Admin - Borne de recharge{% endblock %}
 
 {% block body %}
     <h1>Borne de recharge</h1>
@@ -9,42 +9,42 @@
         <tbody>
             <tr>
                 <th>Id</th>
-                <td>{{ refill_station.id }}</td>
+                <td>{{ refillStation.id }}</td>
             </tr>
             <tr>
                 <th>Nom</th>
-                <td>{{ refill_station.name }}</td>
+                <td>{{ refillStation.name }}</td>
             </tr>
             <tr>
                 <th>Description</th>
-                <td>{{ refill_station.description }}</td>
+                <td>{{ refillStation.description }}</td>
             </tr>
             <tr>
                 <th>Debit</th>
-                <td>{{ refill_station.debit }}</td>
+                <td>{{ refillStation.debit }}</td>
             </tr>
             <tr>
                 <th>Installation</th>
-                <td>{{ refill_station.installation }}</td>
+                <td>{{ refillStation.installation }}</td>
             </tr>
             <tr>
                 <th>Temps de recharge</th>
-                <td>{{ refill_station.refillTime }}</td>
+                <td>{{ refillStation.refillTime }}</td>
             </tr>
             <tr>
                 <th>Stockage supplémentaire</th>
-                <td>{{ refill_station.additionalStorage ? 'Yes' : 'No' }}</td>
+                <td>{{ refillStation.additionalStorage ? 'Yes' : 'No' }}</td>
             </tr>
             <tr>
                 <th>Photo</th>
-                <td>{{ refill_station.photo }}</td>
+                <td>{{ refillStation.photo }}</td>
             </tr>
         </tbody>
     </table>
 
     <a href="{{ path('admin_charging_stations') }}">Retour sur les bornes</a>
 
-    <a href="{{ path('admin_charging_station_edit', {'id': refill_station.id}) }}">Modifier</a>
+    <a href="{{ path('admin_charging_station_edit', {'id': refillStation.id}) }}">Modifier</a>
 
     {{ include('admin/charging_station_delete_form.html.twig') }}
 {% endblock %}
