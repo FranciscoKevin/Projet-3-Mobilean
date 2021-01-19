@@ -5,9 +5,13 @@ namespace App\Entity;
 use App\Repository\VehicleRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use DateTime;
 
 /**
  * @ORM\Entity(repositoryClass=VehicleRepository::class)
+ * @Vich\Uploadable
  */
 class Vehicle
 {
@@ -66,7 +70,6 @@ class Vehicle
      * @Assert\Positive()
      */
     private ?int $tankCapacityFuel;
-
     /**
      * @ORM\Column(type="integer", nullable=true)
      * @Assert\Positive()
@@ -87,9 +90,18 @@ class Vehicle
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Assert\NotBlank()
      */
-    private ?string $photo;
+    private ?string $photo = "";
+
+    /**
+     * @Vich\UploadableField(mapping="vehicle_photo", fileNameProperty="photo")
+     */
+    private ?File $vehiclePhoto = null;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private DateTime $updatedAt;
 
     public function getId(): ?int
     {
@@ -238,5 +250,35 @@ class Vehicle
         $this->photo = $photo;
 
         return $this;
+    }
+
+    public function getVehiclePhoto(): ?File
+    {
+        return $this->vehiclePhoto;
+    }
+
+    public function setVehiclePhoto(File $vehiclePhoto = null): self
+    {
+        $this->vehiclePhoto = $vehiclePhoto;
+        if ($vehiclePhoto) {
+            $this->updatedAt = new DateTime('now');
+        }
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * @param mixed $updatedAt
+     */
+    public function setUpdatedAt($updatedAt): void
+    {
+        $this->updatedAt = $updatedAt;
     }
 }

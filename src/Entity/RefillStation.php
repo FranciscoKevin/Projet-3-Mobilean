@@ -5,9 +5,13 @@ namespace App\Entity;
 use App\Repository\RefillStationRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use DateTime;
 
 /**
  * @ORM\Entity(repositoryClass=RefillStationRepository::class)
+ * @Vich\Uploadable
  */
 class RefillStation
 {
@@ -39,7 +43,7 @@ class RefillStation
 
     /**
      * @ORM\Column(type="string", length=100, nullable=true)
-     * @Assert\Choice({"Intérieur", "Extérieur, Les deux"})
+     * @Assert\Choice({"Intérieure", "Extérieure", "Les deux"})
      */
     private ?string $installation;
 
@@ -57,9 +61,18 @@ class RefillStation
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Assert\NotBlank()
      */
-    private ?string $photo;
+    private ?string $photo = "";
+
+    /**
+     * @Vich\UploadableField(mapping="vehicle_photo", fileNameProperty="photo")
+     */
+    private ?File $chargingStationPhoto = null;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private DateTime $updatedAt;
 
     public function getId(): ?int
     {
@@ -148,5 +161,35 @@ class RefillStation
         $this->photo = $photo;
 
         return $this;
+    }
+
+    public function getChargingStationPhoto(): ?File
+    {
+        return $this->chargingStationPhoto;
+    }
+
+    public function setChargingStationPhoto(File $chargingStationPhoto = null): self
+    {
+        $this->chargingStationPhoto = $chargingStationPhoto;
+        if ($chargingStationPhoto) {
+            $this->updatedAt = new DateTime('now');
+        }
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * @param mixed $updatedAt
+     */
+    public function setUpdatedAt($updatedAt): void
+    {
+        $this->updatedAt = $updatedAt;
     }
 }

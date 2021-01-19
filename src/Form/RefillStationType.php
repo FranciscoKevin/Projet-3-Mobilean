@@ -11,6 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class RefillStationType extends AbstractType
 {
@@ -31,8 +32,8 @@ class RefillStationType extends AbstractType
 
             ->add('installation', ChoiceType::class, [
                 'choices' => [
-                    'Intérieur' => 'Intérieur',
-                    'Extérieur' => 'Intérieur',
+                    'Intérieure' => 'Intérieure',
+                    'Extérieure' => 'Extérieure',
                     'Les deux' => 'Les deux'
                 ],
                 'label' => 'Choix de l\'installation : ',
@@ -52,8 +53,12 @@ class RefillStationType extends AbstractType
                 'expanded' => true,
             ])
 
-            ->add('photo', UrlType::class)
-        ;
+            ->add('chargingStationPhoto', VichFileType::class, [
+                'required'      => false,
+                'allow_delete'  => true,
+                'download_uri' => true,
+                'label' => 'Image'
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver): void

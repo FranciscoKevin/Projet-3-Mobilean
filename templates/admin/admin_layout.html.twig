@@ -25,7 +25,6 @@
 				class="nav-item">
 				{# If admin is not connected he can see login button, if admin connects he can see logout button #}
 				{% if app.user %}
-					{{ app.user.email }}
 					<a class="nav-link nav-style" href="{{ path('app_logout') }}">
 						Se déconnecter</a>
 				{% else %}

@@ -21,17 +21,18 @@
         <li class="nav-item">
             <a class="nav-link" href="{{path('information_about')}}">À propos de nous</a>
         </li>
+      <li class="nav-item">
+	        {# If admin on the site user he can return on site adminisrator #}
+	        {% if app.user %}
+		    <a class="nav-link" href="{{path('admin_home')}}">Revenir au site administrateur</a>
+	        {% endif %}
+        </li>
         <li class="nav-item">
-    {# If admin is not connected he can see login button, if admin connects he can see logout button #}
+			{# If admin connects he can see logout button #}
 			{% if app.user %}
-				{{ app.user.email }}
-				<a class="nav-link nav-style" href="{{ path('app_logout') }}">
-					Se déconnecter</a>
-			{% else %}
-				<a class="nav-link nav-style" href="{{ path('app_login') }}">
-					Se connecter</a>
+			<a class="nav-link nav-style" href="{{ path('app_logout') }}">Se déconnecter</a>
 			{% endif %}
-		</li>
+			</li>
     </ul>
 </nav>
 {% endblock %}

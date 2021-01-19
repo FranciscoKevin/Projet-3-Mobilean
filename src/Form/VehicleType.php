@@ -11,6 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class VehicleType extends AbstractType
 {
@@ -66,8 +67,12 @@ class VehicleType extends AbstractType
                 'label' => 'Volume compartiment arrière : ',
             ])
 
-            ->add('photo', TextType::class)
-        ;
+            ->add('vehiclePhoto', VichFileType::class, [
+                'required'      => false,
+                'allow_delete'  => true,
+                'download_uri' => true,
+                'label' => 'Image'
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver): void

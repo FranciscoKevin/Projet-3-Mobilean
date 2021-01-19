@@ -1,0 +1,12 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        vehicle_photo:
+            uri_prefix: /assets/images
+            upload_destination: '%upload_directory%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+        charging_stations_photo:
+            uri_prefix: /assets/images/
+            upload_destination: '%upload_directory%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer

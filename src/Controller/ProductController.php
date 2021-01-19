@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\VehicleRepository;
+use App\Repository\RefillStationRepository;
 
 /**
  * Creates views that allow users to see the different products
@@ -30,11 +31,12 @@ class ProductController extends AbstractController
      * @Route("/nos-solutions-de-ravitaillement", name="charging_stations")
      * @return Response
      */
-    public function chargingStations(): Response
+    public function chargingStations(RefillStationRepository $refillRepository): Response
     {
-        return $this->render('front/product/charging_stations.html.twig');
+        return $this->render('front/product/charging_stations.html.twig', [
+            'refillStations' => $refillRepository->findAll(),
+        ]);
     }
-
     /**
      * Displays informations about the charging stations
      * @Route("/vehicle", name="vehicle")

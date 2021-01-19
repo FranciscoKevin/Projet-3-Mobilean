@@ -2,9 +2,7 @@
 
 {% extends 'front/front_layout.html.twig' %}
 
-{% block title %}Bornes de Ravitaillement - {{ parent() }}
-{% endblock %}
-
+{% block title %}Bornes de Ravitaillement - {{ parent() }}{% endblock %}
 {% block body %}
     <h1>Nos Solutions de Ravitaillement </h1>
     <p class="presentation-text">
@@ -12,23 +10,15 @@
         Une fois connectée sur votre réseau domestique, la borne de recharge vous permet ravitailler votre véhicule : la nuit suffit à faire le plein !
     </p>
 	<div class = 'station-container'>
+    {% for refillStation in refillStations %}
+        <h2>{{refillStation.name}}</h2>
 		<div class = 'station-block'>
 			<p class = 'stations-text'>
-                Nam quibusdam, quos audio sapientes habitos in Graecia, placuisse opinor mirabilia quaedam (sed nihil est quod illi non persequantur 
-                argutiis): partim fugiendas esse nimias amicitias, ne necesse sit unum sollicitum esse pro pluribus; satis superque esse sibi suarum 
-                cuique rerum, alienis nimis implicari molestum esse; commodissimum esse quam laxissimas habenas habere amicitiae, quas vel adducas, 
-                cum velis, vel remittas; caput enim esse ad beate vivendum securitatem, qua frui non possit animus, si tamquam parturiat unus pro pluribus.
+                {{refillStation.description}}
             </p>
-			<img src="https://static.wixstatic.com/media/dafe57_2ae2b9daa8524bf18f1a7af0eac45fbe~mv2.jpg/v1/fill/w_116,h_210,al_c,lg_1,q_80/phill.webp" alt="borne 1">
+            <img src="/assets/images/{{refillStation.photo}}" alt="{{refillStation.name}}">
 		</div>
-		<div class = 'station-block'>
-			<p = class = 'stations-text'>
-                Nam quibusdam, quos audio sapientes habitos in Graecia, placuisse opinor mirabilia quaedam (sed nihil est quod illi non persequantur 
-                argutiis): partim fugiendas esse nimias amicitias, ne necesse sit unum sollicitum esse pro pluribus; satis superque esse sibi suarum 
-                cuique rerum, alienis nimis implicari molestum esse; commodissimum esse quam laxissimas habenas habere amicitiae, quas vel adducas, 
-                cum velis, vel remittas; caput enim esse ad beate vivendum securitatem, qua frui non possit animus, si tamquam parturiat unus pro pluribus.
-            </p >
-			<img src="https://static.wixstatic.com/media/dafe57_7810b5c7f4bf49dcb5798c6a6183f399~mv2.jpg/v1/fill/w_118,h_183,al_c,lg_1,q_80/FMQ.webp" alt="bone 2">
-		</div>
-	</div>
+    {% endfor %}
+    </div>
 {% endblock %}
+
