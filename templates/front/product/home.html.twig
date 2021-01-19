@@ -38,23 +38,27 @@
                 <li class="vehicle-detail-right">installée sur votre réseau de Gaz Naturel domestique</li>
             </ul>
         </div>
-   </section>
-   
+    </section>
+
+    <h2 id="vehicle-title">Nos véhicules</h2>
     <section>
-        <h2 id="vehicle-title">Nos véhicules</h2>
         <h3 class="vehicle-type">Les véhicules utilitaires</h3>
         <div id="carouselCommercialVehicles" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 {% for vehicle in vehicles %}
-                    <li data-target="#carouselCommercialVehicles" data-slide-to="{{ loop.index-1 }}" class="{{ loop.first ? 'active': '' }} "></li>
+                    {% if vehicle.type == "Utilitaire" %}
+                        <li data-target="#carouselCommercialVehicles" data-slide-to="{{ loop.index-1 }}" class="{{ loop.first ? 'active': '' }} "></li>
+                    {% endif %}
                 {% endfor %}
             </ol>
             <div class="carousel-inner">
                 {% for vehicle in vehicles %}
-                    <div class="carousel-item {{ loop.first ? 'active': '' }} ">
-                        <h4>{{ vehicle.name }}</h4>
-                        <a href="{{ path('product_vehicle', { id : vehicle.id })}}"><img class="d-block w-100" src=" {{ vehicle.photo }}" alt="..."></a>
-                    </div>
+                    {% if vehicle.type == "Utilitaire" %}
+                        <div class="carousel-item {{ loop.first ? 'active': '' }} ">
+                            <h4>{{ vehicle.name }}</h4>
+                            <a href="{{ path('product_vehicle', { id : vehicle.id }) }}"><img class="d-block w-100" src=" {{ vehicle.photo }}" alt="..."></a>
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <a class="carousel-control-prev" href="#carouselCommercialVehicles" role="button" data-slide="prev">
@@ -68,20 +72,24 @@
         </div>
     </section>
 
-    <section class="section-vehicle">        
+    <section class="section-vehicle">
         <h3 class="vehicle-type">Les véhicules particuliers</h3>
-           <div id="carouselPrivateVehicles" class="carousel" data-ride="carousel">
+        <div id="carouselPrivateVehicles" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 {% for vehicle in vehicles %}
-                    <li data-target="#carouselPrivateVehicless" data-slide-to="{{ loop.index-1 }}" class="{{ loop.first ? 'active': '' }} "></li>
+                    {% if vehicle.type == "Particulier" %}
+                        <li data-target="#carouselPrivateVehicles" data-slide-to="{{ loop.index-1 }}" class="{{ loop.last ? 'active': '' }} "></li>
+                    {% endif %}
                 {% endfor %}
             </ol>
             <div class="carousel-inner">
                 {% for vehicle in vehicles %}
-                    <div class="carousel-item {{ loop.first ? 'active': '' }} ">
-                        <h4>{{ vehicle.name }}</h4>
-                        <a href="{{ path('product_vehicle', { id : vehicle.id })}}"><img class="d-block w-100" src=" {{ vehicle.photo }}" alt="..."></a>
-                    </div>
+                    {% if vehicle.type == "Particulier" %}
+                        <div class="carousel-item {{ loop.last ? 'active': '' }} ">
+                            <h4>{{ vehicle.name }}</h4>
+                            <a href="{{ path('product_vehicle', { id : vehicle.id }) }}"><img class="d-block w-100" src=" {{ vehicle.photo }}" alt="..."></a>
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <a class="carousel-control-prev" href="#carouselPrivateVehicles" role="button" data-slide="prev">
@@ -95,3 +103,4 @@
         </div>
     </section>
 {% endblock %}
+ 
