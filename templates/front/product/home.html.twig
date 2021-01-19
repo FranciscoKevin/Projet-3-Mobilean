@@ -40,10 +40,9 @@
         </div>
     </section>
 
-    <h2 id="vehicle-title">Nos véhicules</h2>
     <section>
         <h3 class="vehicle-type">Les véhicules utilitaires</h3>
-        <div id="carouselCommercialVehicles" class="carousel" data-ride="carousel">
+        <div id="carouselCommercialVehicles" class="carousel" data-interval="false" data-ride="carousel">
             <ol class="carousel-indicators">
                 {% for vehicle in vehicles %}
                     {% if vehicle.type == "Utilitaire" %}
@@ -74,7 +73,7 @@
 
     <section class="section-vehicle">
         <h3 class="vehicle-type">Les véhicules particuliers</h3>
-        <div id="carouselPrivateVehicles" class="carousel" data-ride="carousel">
+        <div id="carouselPrivateVehicles" class="carousel" data-interval="false" data-ride="carousel">
             <ol class="carousel-indicators">
                 {% for vehicle in vehicles %}
                     {% if vehicle.type == "Particulier" %}

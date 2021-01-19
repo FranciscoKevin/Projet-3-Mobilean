@@ -45,14 +45,14 @@
             <img class= "vehicle-picture" src="{{ vehicle.photo }}">
             <div class="vehicule-details">
                 <h3 class="vehicule-details-title">Caractéristiques du véhicule</h3>
-                <ul>
-                    <li class="vehicule-detail">Description : {{ vehicle.description }}</li>
-                    <li class="vehicule-detail">actual power : {{ vehicle.actualPower }}</li>
-                    <li class="vehicule-detail">Fiscal power : {{ vehicle.fiscalPower }}</li>
-                    <li class="vehicule-detail">tank Capacity Fuel : {{ vehicle.tankCapacityFuel }}</li>
-                    <li class="vehicule-detail">consumption CNG : {{ vehicle.consumptionCng  }}</li>
-                    <li class="vehicule-detail">autonomy :{{ vehicle.autonomy }}</li>
-                    <li class="vehicule-detail">rear Volume :{{ vehicle.rearVolume }}</li>
+                <ul class="vehicule-detail">
+                    <li>Description : {{ vehicle.description }}</li>
+                    <li>Puissance réelle : {{ vehicle.actualPower }}</li>
+                    <li>Puissance fiscale : {{ vehicle.fiscalPower }}</li>
+                    <li>Capacité de carburant : {{ vehicle.tankCapacityFuel }}</li>
+                    <li>Consommation GNV : {{ vehicle.consumptionCng  }}</li>
+                    <li>Autonomie : {{ vehicle.autonomy }}</li>
+                    <li>Volume compartiment arrière : {{ vehicle.rearVolume }}</li>
                 </ul>
                 <a href="{{path('contact_estimate')}}"><input class="request-button" type="button" value="Demande de devis"></a>
             </div>

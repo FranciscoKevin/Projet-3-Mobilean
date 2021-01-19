@@ -43,7 +43,7 @@ class ProductController extends AbstractController
     public function vehicle(VehicleRepository $vehicleRepository, int $id): Response
     {
         return $this->render('front/product/vehicle.html.twig', [
-            'vehicle' => $vehicleRepository->findOneBy(
+            'vehicle' => $vehicleRepository->findBy(
                 ['id' => $id
                 ]
             )
