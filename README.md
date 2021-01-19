@@ -3,7 +3,6 @@
 ![Wild Code School](https://wildcodeschool.fr/wp-content/uploads/2019/01/logo_pink_176x60.png)
 
 This starter kit is used to develop a web application for 'Mobilean'.
-This application is still in an early stage of developpement, and only consists in the final website's skeleton, through which you can travel using the links in the navigation bar and the footer.
 
 It's symfony website-skeleton project with some additional tools to validate code standards.
 
@@ -27,6 +26,7 @@ It's symfony website-skeleton project with some additional tools to validate cod
 
 1. Check composer is installed
 2. Check yarn & node are installed
+3. Check if wkhtmltopdf is installed
 
 ### Install
 
@@ -34,6 +34,10 @@ It's symfony website-skeleton project with some additional tools to validate cod
 2. Run `composer install`
 3. Run `yarn install`
 4. Run `yarn encore dev` to build assets
+5. Create `.env.local` from the already existing `.env` file
+6. Configure the MAILER_DSN with your information in .env.local file
+7. Configure the DATABSE_URL with your information in .env.local file
+8. Configure the WKHTMLTOPDF_PATH and WKHTMLTOIMAGE_PATH in .env.local file
 
 ### Working
 
