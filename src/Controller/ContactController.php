@@ -6,6 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
+use Knp\Snappy\Pdf;
 use App\Form\PartnerType;
 use App\DataClass\Partnership;
 use App\Form\EstimateIndividualsType;
@@ -35,7 +38,7 @@ class ContactController extends AbstractController
      * @Route("/demande-de-devis", name="estimate")
      * @return Response
      */
-    public function estimate(Request $request): Response
+    public function estimate(Request $request, MailerInterface $mailer, Pdf $pdf): Response
     {
         $estimateIndividuals = new EstimateIndividuals();
         $formIndividuals = $this->createForm(EstimateIndividualsType::class, $estimateIndividuals);
@@ -47,6 +50,29 @@ class ContactController extends AbstractController
 
             // add type of message (for after_submit view purposes)
             $estimateIndividuals->setType('estimateIndividuals');
+
+            // generate pdf
+            $filename = 'demande-devis-' . uniqid() . '.pdf';
+            $pdf->generateFromHtml(
+                $this->renderView(
+                    'pdf.html.twig',
+                    ['data'  => $estimateIndividuals,],
+                ),
+                'assets/estimates/' . $filename
+            );
+
+            // send mail
+            $email = (new Email())
+                ->from('email_from@example.com')
+                ->to('email_to@example.com')
+                ->subject('Demande de devis : ' .
+                $estimateIndividuals->getFirstName() .
+                ' ' . $estimateIndividuals->getLastName())
+                ->html($this->renderView('email.html.twig', [
+                    'data' => $estimateIndividuals,
+                ]))
+                ->attachFromPath('assets/estimates/' . $filename);
+            $mailer->send($email);
 
             // return after submit page
             return $this->render('front/contact/after_submit.html.twig', [
@@ -65,6 +91,27 @@ class ContactController extends AbstractController
             // add type of message (for after_submit view purposes)
             $estimateCompanies->setType('estimateCompanies');
 
+            // generate pdf
+            $filename = 'demande-devis-' . uniqid() . '.pdf';
+            $pdf->generateFromHtml(
+                $this->renderView(
+                    'pdf.html.twig',
+                    ['data'  => $estimateCompanies,],
+                ),
+                'assets/estimates/' . $filename
+            );
+
+            // send mail
+            $email = (new Email())
+                ->from('email_from@example.com')
+                ->to('email_to@example.com')
+                ->subject('Demande de devis : ' . $estimateCompanies->getBusinessName())
+                ->html($this->renderView('email.html.twig', [
+                    'data' => $estimateCompanies,
+                ]))
+                ->attachFromPath('assets/estimates/' . $filename);
+            $mailer->send($email);
+
             // return after submit page
             return $this->render('front/contact/after_submit.html.twig', [
                 'data' => $estimateCompanies,
@@ -82,7 +129,7 @@ class ContactController extends AbstractController
      * @Route("/demande-de-partenariat", name="partner")
      * @return Response
      */
-    public function partner(Request $request): Response
+    public function partner(Request $request, MailerInterface $mailer, Pdf $pdf): Response
     {
         $partner = new Partnership();
         $form = $this->createForm(PartnerType::class, $partner);
@@ -94,6 +141,27 @@ class ContactController extends AbstractController
 
             // add type of message (for after_submit view purposes)
             $partner->setType('partner');
+
+            // generate pdf
+            $filename = 'demande-partenariat-' . uniqid() . '.pdf';
+            $pdf->generateFromHtml(
+                $this->renderView(
+                    'pdf.html.twig',
+                    ['data'  => $partner,],
+                ),
+                'assets/partners/' . $filename
+            );
+
+            // send mail
+            $email = (new Email())
+                ->from('email_from@example.com')
+                ->to('email_to@example.com')
+                ->subject('Demande de partenariat : ' . $partner->getBusinessName())
+                ->html($this->renderView('email.html.twig', [
+                    'data' => $partner,
+                ]))
+                ->attachFromPath('assets/partners/' . $filename);
+            $mailer->send($email);
 
             // return after submit page
             return $this->render('front/contact/after_submit.html.twig', [

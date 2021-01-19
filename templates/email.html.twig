@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% if data.type == 'partner' %}
+                Nouvelle demande de partenariat
+            {% else %}
+                Nouvelle demande de devis
+            {% endif %}
+        </title>
+    </head>
+
+    <body>
+    {% if data.type == 'partner' %}
+        <p>Vous venez de recevoir une nouvelle demande de partenariat, disponible en pièce jointe.</p>
+    {% else %}
+        <p>Vous venez de recevoir une nouvelle demande de devis, disponible en pièce jointe.</p>
+    {% endif %}
+    </body>
+
+</html>
