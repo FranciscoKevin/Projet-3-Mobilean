@@ -100,6 +100,23 @@
         <li>Message : {{ data.message }}</li><br>
     {% endif %}
 {% endif %}
+
+{% if data.type == 'contact' %}
+    <li>Date d'envoi de la demande : {{ data.submitDate|date('d/m/Y') }}</li><br>
+    <li>Nom : {{ data.fullName }}</li><br>
+    {% if data.businessName is not empty %}
+        <li>Raison sociale : {{ data.businessName }}</li><br>
+    {% endif %}
+    <li>E-mail : {{ data.email }}</li><br>
+    <li>Téléphone : 
+        {% if data.telephone is not empty %}
+            {{ data.telephone }}
+        {% else %}
+            Non renseigné
+        {% endif %}</li><br>
+    <li>Objet de votre demande : {{ data.subject }}</li><br>
+    <li>Message : {{ data.message }}</li><br>
+{% endif %}
 </ul>
 <a href="{{path('product_vehicles')}}">Revenir au site</a>
 {% endblock %}

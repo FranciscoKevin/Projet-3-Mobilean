@@ -6,6 +6,8 @@
         <title>
             {% if data.type == 'partner' %}
                 Nouvelle demande de partenariat
+            {% elseif data.type == 'contact' %}
+                Nouvelle demande d'informations
             {% else %}
                 Nouvelle demande de devis
             {% endif %}
@@ -15,6 +17,8 @@
     <body>
     {% if data.type == 'partner' %}
         <p>Vous venez de recevoir une nouvelle demande de partenariat, disponible en pièce jointe.</p>
+    {% elseif data.type == 'contact' %}
+        <p>Vous venez de recevoir une nouvelle demande d'informations, disponible en pièce jointe</p>
     {% else %}
         <p>Vous venez de recevoir une nouvelle demande de devis, disponible en pièce jointe.</p>
     {% endif %}

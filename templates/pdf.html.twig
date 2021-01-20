@@ -6,11 +6,35 @@
         <title>
             {% if data.type == 'partner' %}
                 Demande de Partenariat
+            {% elseif data.type == 'contact' %}
+                Demande d'Informations
+            {% else %}
+                Demande de Devis
             {% endif %}
         </title>
     </head>
 
     <body>
+    {% if data.type == 'contact' %}
+        <h1>Message</h1>
+        <ul>
+            <li>Date de réception de la demande : {{ data.submitDate|date('d/m/Y') }}</li><br>
+            <li>Nom : {{ data.fullName }}</li><br>
+            {% if data.businessName is not empty %}
+                <li>Raison sociale : {{ data.businessName }}</li><br>
+            {% endif %}
+            <li>E-mail : {{ data.email }}</li><br>
+            <li>Téléphone : 
+                {% if data.telephone is not empty %}
+                    {{ data.telephone }}
+                {% else %}
+                    Non renseigné
+                {% endif %}</li><br>
+            <li>Objet de la demande : {{ data.subject }}</li><br>
+            <li>Message : {{ data.message }}</li><br>
+        </ul>
+    {% endif %}
+
     {% if data.type == 'partner' %}
         <h1>Demande de Partenariat</h1>
         <ul>

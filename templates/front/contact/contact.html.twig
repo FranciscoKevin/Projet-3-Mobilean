@@ -6,4 +6,9 @@
 
 {% block body %}
 <h1>Contactez-Nous</h1>
+
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button>Envoyer</button>
+{{ form_end(form) }}
 {% endblock %}

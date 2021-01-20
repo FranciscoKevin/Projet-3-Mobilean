@@ -15,6 +15,8 @@ use App\Form\EstimateIndividualsType;
 use App\DataClass\EstimateIndividuals;
 use App\Form\EstimateCompaniesType;
 use App\DataClass\EstimateCompanies;
+use App\Form\ContactType;
+use App\DataClass\Contact;
 use DateTime;
 
 /**
@@ -28,9 +30,49 @@ class ContactController extends AbstractController
      * @Route("/contactez-nous", name="message")
      * @return Response
      */
-    public function contact(): Response
+    public function contact(Request $request, MailerInterface $mailer, Pdf $pdf): Response
     {
-        return $this->render('front/contact/contact.html.twig');
+        $contact = new Contact();
+        $form = $this->createForm(ContactType::class, $contact);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // add date of message submission
+            $contact->setSubmitDate(new DateTime('now'));
+
+            // add type of message (for after_submit view purposes)
+            $contact->setType('contact');
+
+            // generate pdf
+            $filename = 'demande-' . uniqid() . '.pdf';
+            $pdf->generateFromHtml(
+                $this->renderView(
+                    'pdf.html.twig',
+                    ['data'  => $contact,],
+                ),
+                'assets/contact/' . $filename
+            );
+
+            // send mail
+            $email = (new Email())
+                ->from('email_from@example.com')
+                ->to('email_to@example.com')
+                ->subject($contact->getSubject())
+                ->html($this->renderView('email.html.twig', [
+                    'data' => $contact,
+                ]))
+                ->attachFromPath('assets/contact/' . $filename);
+            $mailer->send($email);
+
+            // return after submit page
+            return $this->render('front/contact/after_submit.html.twig', [
+                'data' => $contact,
+            ]);
+        }
+
+        return $this->render('front/contact/contact.html.twig', [
+            'form' => $form->createView(),
+        ]);
     }
 
     /**
