@@ -1,42 +1,49 @@
 {% extends 'base.html.twig' %}
 
 {% block navbar %}
-<nav class="bg fixed-top">
-    <ul class="navbar navbar-expand navbar-light">
-        <li>
-            <a class="navbar-brand" href="{{path('product_vehicles')}}"><img src="/assets/images/logo.png" class="logoMobilean" alt="logo Mobilean"></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{path('product_vehicles')}}">Nos solutions clés en main</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{path('product_charging_stations')}}">Nos solutions de ravitaillement</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{path('contact_estimate')}}">Je décris mon besoin</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{path('contact_partner')}}">Devenir installateur</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{path('information_about')}}">À propos de nous</a>
-        </li>
-        <li class="nav-item">
-    {# If admin is not connected he can see login button, if admin connects he can see logout button #}
-			{% if app.user %}
-				{{ app.user.email }}
-				<a class="nav-link nav-style" href="{{ path('app_logout') }}">
-					Se déconnecter</a>
-			{% else %}
-				<a class="nav-link nav-style" href="{{ path('app_login') }}">
-					Se connecter</a>
-			{% endif %}
-		</li>
-    </ul>
+
+
+
+<nav class="navbar navbar-expand-lg header-nav fixed-top">
+    <a class="navbar-brand" href="{{path('product_vehicles')}}"><img src="/assets/images/logoMobilean.png" class="logoMobilean" alt="logo Mobilean"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{path('product_vehicles')}}">Nos solutions clés en main<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{path('product_charging_stations')}}">Nos solutions de ravitaillement</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{path('contact_estimate')}}">Je décris mon besoin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{path('contact_partner')}}">Devenir installateur</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{path('information_about')}}">À propos de nous</a>
+            </li>
+            <li class="nav-item-connection">
+                {# If admin is not connected he can see login button, if admin connects he can see logout button #}
+                {% if app.user %}
+                {{ app.user.email }}
+                    <a class="nav-link nav-style" href="{{ path('app_logout') }}">
+                Se déconnecter</a>
+                {% else %}
+                    <a class="nav-link nav-style" href="{{ path('app_login') }}">
+                Se connecter</a>
+                {% endif %}
+            </li>
+        </ul>
+    </div>
 </nav>
+
 {% endblock %}
 
 {% block footer %}
-    <p class="footer-block"> <a class="nav-link" href="{{path('contact_message')}}">Contactez-nous</a></p>
-    <p class="footer-block"><a class="nav-link" href="{{path('information_legal')}}">Mentions légales</a></p>
+    <p class="footer-block"> <a class="nav-link-footer" href="{{path('contact_message')}}">Contactez-nous</a></p>
+    <p class="footer-block"><a class="nav-link-footer" href="{{path('information_legal')}}">Mentions légales</a></p>
 {% endblock %}

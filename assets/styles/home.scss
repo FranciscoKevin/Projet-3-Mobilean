@@ -19,7 +19,7 @@
 
 .Offerpresentation{
     font-size: 40px;
-    color: #DA9652;
+    color: #548235;
 }
 
 .vehicle-type {
@@ -30,6 +30,8 @@
     box-shadow: 2px 2px 2px gray,
     -1px -1px 2px white;
     background-color: #F2F4F1;
+    color: #548235;
+
 }
 
 .carousel {
@@ -100,7 +102,7 @@ section h3 {
 }
 
 // For computers
-@media screen and (min-width : 1112px) {
+@media screen and (min-width: 1112px) {
     .carousel {
         margin: auto;
         padding: 10px;
