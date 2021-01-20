@@ -5,66 +5,69 @@
 {% block body %}
     <h1>Détail du véhicule</h1>
 
-    <table class="table">
+    <table class="table-show-vehicle table table-hover">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th scope="col">Id</th>
                 <td>{{ vehicle.id }}</td>
             </tr>
             <tr>
-                <th>Nom</th>
+                <th scope="col">Nom</th>
                 <td>{{ vehicle.name }}</td>
             </tr>
             <tr>
-                <th>Description</th>
+                <th scope="col">Description</th>
                 <td>{{ vehicle.description }}</td>
             </tr>
             <tr>
-                <th>Type de véhicule</th>
+                <th scope="col">Type de véhicule</th>
                 <td>{{ vehicle.type }}</td>
             </tr>
             <tr>
-                <th>Puissance fiscal</th>
+                <th scope="col">Puissance fiscale</th>
                 <td>{{ vehicle.fiscalPower }}</td>
             </tr>
             <tr>
-                <th>Puissance réelle</th>
+                <th scope="col">Puissance réelle</th>
                 <td>{{ vehicle.actualPower }}</td>
             </tr>
             <tr>
-                <th>Capacité réservoir GNV</th>
+                <th scope="col">Capacité réservoir GNV</th>
                 <td>{{ vehicle.tankCapacityCNG }}</td>
             </tr>
             <tr>
-                <th>Consommation GNV</th>
+                <th scope="col">Consommation GNV</th>
                 <td>{{ vehicle.consumptionCNG }}</td>
             </tr>
             <tr>
-                <th>Capacité carburant</th>
+                <th scope="col">Capacité carburant</th>
                 <td>{{ vehicle.tankCapacityFuel }}</td>
             </tr>
             <tr>
-                <th>Consommation carburant</th>
+                <th scope="col">Consommation carburant</th>
                 <td>{{ vehicle.consumptionFuel }}</td>
             </tr>
             <tr>
-                <th>Autonomie</th>
+                <th scope="col">Autonomie</th>
                 <td>{{ vehicle.autonomy }}</td>
             </tr>
             <tr>
-                <th>Vol.compartiment arrière</th>
+                <th scope="col">Vol.compartiment arrière</th>
                 <td>{{ vehicle.rearVolume }}</td>
             </tr>
             <tr>
-                <th>Photo</th>
+                <th scope="col">Photo</th>
                 <td>{{ vehicle.photo }}</td>
             </tr>
         </tbody>
+        <tfoot>
+            <th>
+                <a href="{{ path('admin_vehicles') }}">Retour sur les véhicules</a>
+            </th>
+        </tfoot>
     </table>
-
-    <a href="{{ path('admin_vehicles') }}">Retour sur les véhicules</a>
-
-    <a href="{{ path('admin_vehicle_edit', {'id': vehicle.id}) }}">Modifier</a>
-
-    {{ include('admin/vehicle_delete_form.html.twig') }}
+    <div class="button-action">
+        <a class="btn btn-success"href="{{ path('admin_vehicle_edit', {'id': vehicle.id}) }}" role="button">Modifier</a>
+        {{ include('admin/vehicle_delete_form.html.twig') }}
+    </div>
 {% endblock %}

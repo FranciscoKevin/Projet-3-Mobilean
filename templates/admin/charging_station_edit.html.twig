@@ -4,10 +4,14 @@
 
 {% block body %}
     <h1>Modifier la borne de recharge</h1>
-
-    {{ include('admin/charging_station_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href="{{ path('admin_charging_stations') }}">Retour sur les bornes</a>
-
-    {{ include('admin/charging_station_delete_form.html.twig') }}
+        <div class="page-form-edit">
+            <div class="form-edit">
+                {{ include('admin/charging_station_form.html.twig') }}
+            </div>
+            <div class="form-edit">
+                {{ include('admin/charging_station_delete_form.html.twig') }}
+            </div>
+            <a href="{{ path('admin_charging_stations') }}">Retour sur les bornes</a>
+        </div>
+    
 {% endblock %}

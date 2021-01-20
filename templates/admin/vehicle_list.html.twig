@@ -6,44 +6,30 @@
 
 {% block body %}
 <h1>Catalogue des véhicules</h1>
-<table class="table">
+    <table class="table-vehicle table table-hover">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>Description</th>
-                <th>Type de véhicule</th>
-                <th>Puissance fiscal</th>
-                <th>Puissance réelle</th>
-                <th>Capacité réservoir GNV</th>
-                <th>Consommation GNV</th>
-                <th>Capacité carburant</th>
-                <th>Consommation carburant</th>
-                <th>Autonomie</th>
-                <th>Vol.compartiment arrière</th>
-                <th>Photo</th>
-                <th>Actions</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Description</th>
+                <th scope="col">Type de véhicule</th>
+                <th scope="col">Puissance fiscale</th>
+                <th scope="col">Puissance réelle</th>
+                <th scope="col">Photo</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for vehicle in vehicles %}
             <tr>
-                <td>{{ vehicle.id }}</td>
                 <td>{{ vehicle.name }}</td>
                 <td>{{ vehicle.description }}</td>
                 <td>{{ vehicle.type }}</td>
                 <td>{{ vehicle.fiscalPower }}</td>
                 <td>{{ vehicle.actualPower }}</td>
-                <td>{{ vehicle.tankCapacityCNG }}</td>
-                <td>{{ vehicle.consumptionCNG }}</td>
-                <td>{{ vehicle.tankCapacityFuel }}</td>
-                <td>{{ vehicle.consumptionFuel }}</td>
-                <td>{{ vehicle.autonomy }}</td>
-                <td>{{ vehicle.rearVolume }}</td>
                 <td>{{ vehicle.photo }}</td>
                 <td>
-                    <a href="{{ path('admin_vehicle_show', {'id': vehicle.id}) }}">Voir</a>
-                    <a href="{{ path('admin_vehicle_edit', {'id': vehicle.id}) }}">Modifier</a>
+                    <a class="btn btn-outline-info" href="{{ path('admin_vehicle_show', {'id': vehicle.id}) }}" roles="button">Détails</a>
+                    <a class="btn btn-outline-info"href="{{ path('admin_vehicle_edit', {'id': vehicle.id}) }}" roles="button">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -53,5 +39,5 @@
         {% endfor %}
         </tbody>
     </table>
-    <a href="{{ path('admin_vehicle_new') }}">Ajouter</a>
+    <a class="btn-add btn btn-success"href="{{ path('admin_vehicle_new') }}" roles="button">Ajouter</a>
 {% endblock %}
