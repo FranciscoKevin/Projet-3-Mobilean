@@ -2,7 +2,7 @@
 
 {% extends 'front/front_layout.html.twig' %}
 
-{% block title %}vehicle - {{ parent() }}{% endblock %}
+{% block title %}vehicle - {{ parent() }} {{ vehicle.id }}{% endblock %}
 
 {% block body %}
 <h1>Nos vehicules</h1>
@@ -31,7 +31,7 @@
             <ul class="vehicle-list">
                 <li class="vehicle-detail-left"><img src="/assets/images/car.png" class="" alt="picture car"></li>
                 <li class="vehicle-detail-right"><img src="/assets/images/petrol.png" class="" alt="picture refillstation"></li>
-                <li class="vehicle-detail-left" id="vehicle-right">Un véhicule :</li>
+                <li class="vehicle-detail-left" id="vehicle-right">Un véhicule :</li> 
                 <li class="vehicle-detail-right" id="vehicle-left">Une borne de recharge :</li>
                 <li class="vehicle-detail-left">équipé d'origine au GNV par le constructeur</li>
                 <li class="vehicle-detail-right">installée sur votre réseau de Gaz Naturel domestique</li>
@@ -40,23 +40,19 @@
    </section>
 
     <section>
-        <h2 id="vehicle-title">Nom de la voiture</h2>
+        <h2 id="vehicle-title">{{ vehicle.name }}</h2>
         <div class="vehicle-description">
-            <img class= "vehicle-picture" src="https://via.placeholder.com/400C/Ohttps://placeholder.com/">
+            <img class= "vehicle-picture" src="{{ vehicle.photo }}">
             <div class="vehicule-details">
                 <h3 class="vehicule-details-title">Caractéristiques du véhicule</h3>
-                <ul>
-                    <li class="vehicule-detail">Description :</li>
-                    <hr class="hr">
-                    <li class="vehicule-detail">actualpower :</li>
-                    <hr class="hr">
-                    <li class="vehicule-detail">tankCapacityFuel :</li>
-                    <hr class="hr">
-                    <li class="vehicule-detail">consumptionCNG :</li>
-                    <hr class="hr">
-                    <li class="vehicule-detail">autonomy :</li>
-                    <hr class="hr">
-                    <li class="vehicule-detail">rearVolume :</li>
+                <ul class="vehicule-detail">
+                    <li>Description : {{ vehicle.description }}</li>
+                    <li>Puissance réelle : {{ vehicle.actualPower }}</li>
+                    <li>Puissance fiscale : {{ vehicle.fiscalPower }}</li>
+                    <li>Capacité de carburant : {{ vehicle.tankCapacityFuel }}</li>
+                    <li>Consommation GNV : {{ vehicle.consumptionCng  }}</li>
+                    <li>Autonomie : {{ vehicle.autonomy }}</li>
+                    <li>Volume compartiment arrière : {{ vehicle.rearVolume }}</li>
                 </ul>
                 <a href="{{path('contact_estimate')}}"><input class="request-button" type="button" value="Demande de devis"></a>
             </div>

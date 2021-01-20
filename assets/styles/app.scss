@@ -1,16 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
 
+* {
+    padding:0;
+    margin:0;
+}
+
 html {
-    padding-bottom: 100px;
     padding-top: 70px;
 }
 
-.navbar {
-    list-style-type: none;
+
+header, main {
+    width: 80%;
+    margin: auto;
 }
 
-body {
-    margin: auto;
-    width: 80%;
-    background-color: #D0E1CA;
-}
