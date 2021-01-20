@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     libcurl4 \
     libcurl4-openssl-dev \
+    wkhtmltopdf \
     nginx
 
 
